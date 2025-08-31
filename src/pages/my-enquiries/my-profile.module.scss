@@ -1,0 +1,25 @@
+@import 'styles/mixins.scss';
+@import 'styles/colors.scss';
+
+.section_heading{
+    font-size: 20px;
+}
+.table{
+    width: 100%;
+}
+.table thead{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.table tbody{
+    border-bottom: 1px solid;
+}
+.table thead th{
+    padding: 10px 5px;
+}
+.table tbody td{
+    padding: 5px 5px;
+}
+.link:hover{
+    color: #000;
+    }

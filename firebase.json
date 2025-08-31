@@ -1,0 +1,1152 @@
+{
+  "hosting": {
+    "site": "jarvis-a6aba",
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/property/farmhouse-in-shamshabad",
+        "destination": "/telangana/hyderabad/farmhouses-in-shamshabad",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/luxuryvilla/hyd1056-4br-pool-farmstay.html",
+        "destination": "/hyderabad/moinabad/luxury-4br-projector-table-tennis-pool-farmhouse-hyd1056.html",
+        "type": 301
+      },
+      {
+        "source": "/shamshabad",
+        "destination": "/telangana/hyderabad/farmhouses-in-shamshabad",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/manikonda/farmhouses/elegant-pets-pool-3br-pool-villa-in-manikonda-hyderabad-home-theater-terrace-pool-hyd1018.html",
+        "destination": "/hyderabad/manikonda/elegant-3br-terrace-pool-pets-pool-home-theatre-villa-hyd1018.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/cottages/spacious-11br-pool-property-in-tspa-moinabad-hyderabad-banquet-hall-net-cricket-hyd1042.html",
+        "destination": "/hyderabad/moinabad/spacious-11br-banquet-hall-net-cricket-pool-property-hyd1042.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/ghatkesar/farmhouses/4br-farmhouse-in-ghatkesar-hyderabad-swimming-pool-kids-pool-cricket-set-hyd1058.html",
+        "destination": "/hyderabad/ghatkesar/4br-swimming-pool-kids-pool-farmhouse-hyd1058.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/budget-friendly-3br-pool-farmstay-in-shamirpet-hyderabad-swimming-pooltrekking-hyd1014.html",
+        "destination": "/hyderabad/shamirpet/3br-swimming-pool-trekking-farmstay-hyd1014.html",
+        "type": 301
+      },
+      {
+        "source": "/city/telangana-hyderabad",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/5br-pool-property-in-shamirpet-hyderabad-outdoor-bar-counterstagegames-hyd1049.html",
+        "destination": "/hyderabad/shamirpet/5br-outdoor-bar-counter-games-pool-property-hyd1049.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/4br-pool-villa-in-medchal-hyderabad-unique-architecturelush-lawnswimming-pool-hyd1022.html",
+        "destination": "/hyderabad/medchal/unique-architecture-4br-swimming-pool-lawn-villa-hyd1022.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/10br-pool-villa-in-shamshabad-hyderabad-banquet-hall-projector-games-hyd1061.html",
+        "destination": "/hyderabad/shamshabad/luxury-10br-pool-villa-banquet-projector-games-hyd1061.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/budget-friendly-3br-pool-villa-in-medchal-hyderabad-swimming-poolkids-poolcarroms-hyd1013.html",
+        "destination": "/hyderabad/medchal/3br-swimming-pool-kids-pool-budget-friendly-villa-hyd1013.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/hyd1011-3br-pool-farmstay.html",
+        "destination": "/hyderabad/moinabad/3br-table-tennis-lawn-pool-farmstay-hyd1011.html",
+        "type": 301
+      },
+      {
+        "source": "/location/telangana-hyderabad-kollur",
+        "destination": "/telangana/hyderabad/farmhouses-in-kollur",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/4br-pool-property-in-shamshabad-hyderabad-bar-counter-table-tennis-hyd1052.html",
+        "destination": "/hyderabad/shamshabad/4br-bar-counter-table-tennis-pool-property-hyd1052.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/4br-pool-farmhouse-in-tspa-moinabad-hyderabad-projector-net-cricket-games-room-stage-hyd1054.html",
+        "destination": "/hyderabad/moinabad/4br-projector-games-room-pool-farmhouse-hyd1054.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/peddagolkonda/farmhouses/hyd1035-5br-luxury-sports-villa.html",
+        "destination": "/hyderabad/peddagolkonda/luxury-5br-box-cricket-snooker-sports-villa-hyd1035.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/satwa.html",
+        "destination": "/telangana/hyderabad/farmhouses-in-shamshabad",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/luxury-12br-pool-farmhouse-in-tspa-moinabad-pool-projector-table-tennis-carroms-hyd1063.html",
+        "destination": "/hyderabad/moinabad/luxury-12br-table-tennis-pool-projector-farmhouse-hyd1063.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farm-houses/forestnest.html",
+        "destination": "/hyderabad/shamirpet/3br-swimming-pool-trekking-farmstay-hyd1014.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/3br-farmstay-with-pool-in-tspa-moinabad-hyderabad-table-tennis-lush-lawn-hyd1011.html",
+        "destination": "/hyderabad/moinabad/3br-table-tennis-lawn-pool-farmstay-hyd1011.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/4br-pool-property-in-shamshabad-hyderabad-modern-interiors-snooker-hyd1051.html",
+        "destination": "/hyderabad/shamshabad/4br-modern-interiors-snooker-pool-property-hyd1051.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/ghatkesar/farmhouses/manduva-style-4br-pool-side-projector-property-hyd1030.html",
+        "destination": "/hyderabad/ghatkesar/manduva-style-4br-pool-side-projector-property-hyd1030.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tukkaguda-orr-exit/farmhouses/prego.html",
+        "destination": "/telangana/hyderabad/farmhouses-in-tukkuguda",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/7br-net-cricket-stage-pool-farmhouse-hyd1055.html",
+        "destination": "/hyderabad/moinabad/7br-net-cricket-stage-pool-farmhouse-hyd1055.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/7br-pool-villa-in-shamshabad-hyderabad-projector-table-tennis-kids-play-area-hyd1047.html",
+        "destination": "/hyderabad/shamshabad/7br-projector-kids-play-area-pool-villa-hyd1047.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/hyd1057-4br-pool-farmstay.html",
+        "destination": "/hyderabad/medchal/4br-banquet-hall-party-lawn-pool-farmhouse-hyd1057.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/syna-amado.html",
+        "destination": "/hyderabad/shamshabad/vintage-themed-6br-projector-kids-play-area-pool-villa-hyd1038.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/ghatkesar/farmhouses/hyd1058-4br-farmstay.html",
+        "destination": "/hyderabad/ghatkesar/4br-swimming-pool-kids-pool-farmhouse-hyd1058.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/test-property-2-dont-book.html",
+        "destination": "/hyderabad/shamshabad/test-property-2-dont-book-test-property-2-dont-book.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/syna-heritage-2br-pool-villa.html",
+        "destination": "/hyderabad/shamshabad/2br-pool-villa-kids-play-area-hyd1001.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/spacious-5br-pool-villa-in-shamshabad-hyderabad-table-tennisfussballcricketbadminton-hyd1032.html",
+        "destination": "/hyderabad/shamshabad/spacious-5br-cricket-table-tennis-pool-villa-hyd1032.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/2br-outdoor-projector-indoor-games-farmhouse-hyd1068.html",
+        "destination": "/hyderabad/shamirpet/2br-outdoor-projector-indoor-games-farmhouse-hyd1068.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/2br-farmhouse-in-shamirpet-hyderabad-table-tennis-outdoor-projector-indoor-games-hyd1068.html",
+        "destination": "/hyderabad/shamirpet/2br-outdoor-projector-indoor-games-farmhouse-hyd1068.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/forestnest.html",
+        "destination": "/hyderabad/shamirpet/3br-swimming-pool-trekking-farmstay-hyd1014.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/tiwari-farms.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/4br-pool-villa-in-shamirpet-hyderabad-outdoor-dining-badminton-party-lawns-hyd1050.html",
+        "destination": "/hyderabad/shamirpet/4br-outdoor-dining-party-lawn-pool-villa-hyd1050.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/hyd1001-2br-pool-villa.html",
+        "destination": "/hyderabad/shamshabad/2br-pool-villa-kids-play-area-hyd1001.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/kerala-style-4br-farmhouse-in-medchal-hyderabad-swimming-pool-lush-lawn-pool-projector-hyd1070.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/budget-friendly-3br-pool-farmstay-in-shamirpet-hyderabad-swimming-pool-trekking-hyd1014.html",
+        "destination": "/hyderabad/shamirpet/3br-swimming-pool-trekking-farmstay-hyd1014.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/3br-pool-villa-in-tspa-moinabad-hyderabad-indoor-projector-foosball-lush-lawn-hyd1010.html",
+        "destination": "/hyderabad/moinabad/3br-outdoor-projector-foosball-pool-villa-hyd1010.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/budget-friendly-3br-pool-villa-in-medchal-hyderabad-swimming-pool-kids-pool-carroms-hyd1013.html",
+        "destination": "/hyderabad/medchal/3br-swimming-pool-kids-pool-budget-friendly-villa-hyd1013.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/spacious-5br-pool-property-in-shamshabad-hyderabad-rain-dancekids-play-area-hyd1044.html",
+        "destination": "/hyderabad/shamshabad/spacious-5br-rain-dance-kids-play-area-pool-property-hyd1044.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/4br-luxury-pool-farmhouse-in-tspa-moinabad-lush-lawnswimming-poolkids-pool-hyd1060.html",
+        "destination": "/hyderabad/moinabad/4br-luxury-swimming-pool-kids-pool-farmhouse-hyd1060.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/peddamberpet/farmhouses/spacious-4br-pool-villa-in-peddamberpet-hyderabad-nature-retreatlarge-swimming-pool-hyd1026.html",
+        "destination": "/hyderabad/peddamberpet/spacious-4br-nature-retreat-large-swimming-pool-villa-hyd1026.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/4br-pool-property-in-shamshabad-hyderabad-bar-countersnooker-hyd1053.html",
+        "destination": "/hyderabad/shamshabad/4br-bar-counter-snooker-pool-property-hyd1053.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/ghatkesar/farmhouses/manduva-style-4br-pool-property-in-ghatkesar-hyderabad-poolside-projectorhyd1030.html",
+        "destination": "/hyderabad/ghatkesar/manduva-style-4br-pool-side-projector-property-hyd1030.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/private-4br-pool-villa-in-shamirpet-hyderabad-swimming-pool-lush-lawn-hyd1023.html",
+        "destination": "/hyderabad/shamirpet/4br-lawn-swimming-pool-villa-hyd1023.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/peddagolkonda/farmhouses/hyd1017-3br-luxury-pool-villa.html",
+        "destination": "/hyderabad/peddagolkonda/luxury-3br-dance-floor-home-theatre-indoor-pool-villa-hyd1017.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/2br-retreat-in-tspa-moinabad-hyderabad-poolside-projectorindoor-home-theater-hyd1003.html",
+        "destination": "/hyderabad/moinabad/2br-retreat-pool-side-projector-indoor-home-theatre-hyd1003.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/4br-pool-farmhouse-in-medchal-hyderabad-banquet-hallparty-lawnbasketball-hyd1057.html",
+        "destination": "/hyderabad/medchal/4br-banquet-hall-party-lawn-pool-farmhouse-hyd1057.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/hyd1013-3br-pool-villa.html",
+        "destination": "/hyderabad/medchal/3br-swimming-pool-kids-pool-budget-friendly-villa-hyd1013.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/private-4br-pool-villa-in-shamirpet-hyderabad-swimming-poollush-lawn-hyd1023.html",
+        "destination": "/hyderabad/shamirpet/4br-lawn-swimming-pool-villa-hyd1023.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/luxuryvilla/hyd1040-8br-property.html",
+        "destination": "/hyderabad/medchal/luxury-8br-banquet-hall-outdoor-amphitheatre-villa-hyd1040.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/peddagolkonda/farmhouses/luxury-3br-pool-villa-in-peddagolkonda-hyderabad-home-theater-with-dance-floorindoor-pool-hyd1017.html",
+        "destination": "/hyderabad/peddagolkonda/luxury-3br-dance-floor-home-theatre-indoor-pool-villa-hyd1017.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/hyd1019-3br-pool-property.html",
+        "destination": "/hyderabad/moinabad/3br-budget-friendly-poolside-projector-villa-hyd1019.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/hyd1021-4br-pool-villa.html",
+        "destination": "/hyderabad/medchal/unique-architecture-4br-indoor-projector-cricket-pool-villa-hyd1021.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/luxuryvilla/luxury-4br-pool-farmhouse-in-tspa-moinabad-hyderabad-projectortable-tennis-hyd1056.html",
+        "destination": "/hyderabad/moinabad/luxury-4br-projector-table-tennis-pool-farmhouse-hyd1056.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/unique-architecture-4br-pool-villa-in-medchal-hyderabad-indoor-projectorcricketbadminton-hyd1021.html",
+        "destination": "/hyderabad/medchal/unique-architecture-4br-indoor-projector-cricket-pool-villa-hyd1021.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/spacious-6br-pool-property-in-tspa-moinabad-hyderabad-forest-trekkingkids-play-area-hyd1039.html",
+        "destination": "/hyderabad/moinabad/forest-retreat-6br-pool-kids-play-trek-hyd1039.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tukkaguda/farmhouses/3br-pool-villa-in-tukkaguda-hyderabad-large-projection-pool-with-kids-pool-outdoor-patio-hyd1016.html",
+        "destination": "/hyderabad/tukkaguda/3br-large-projector-kids-pool-villa-hyd1016.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspa-moinabad/farmhouses/hyd1003-2br-retreat.html",
+        "destination": "/hyderabad/moinabad/2br-retreat-pool-side-projector-indoor-home-theatre-hyd1003.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/ghatkesar/cottages/hyd1007-2br-pool-villa.html",
+        "destination": "/hyderabad/ghatkesar/2br-manduva-style-pool-side-projector-bonfire-farmhouse-hyd1007.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/hyd1010-3br-pool-villa.html",
+        "destination": "/hyderabad/moinabad/3br-outdoor-projector-foosball-pool-villa-hyd1010.html",
+        "type": 301
+      },
+      {
+        "source": "/location/telangana-karimnagar-nallagonda",
+        "destination": "/telangana/karimnagar/farmhouses-in-nallagonda",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/2br-retreat-in-tspa-moinabad-hyderabad-poolside-projector-indoor-home-theater-hyd1003.html",
+        "destination": "/hyderabad/moinabad/2br-retreat-pool-side-projector-indoor-home-theatre-hyd1003.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/peddagolkonda/luxuryvilla/hyd1043-11br-luxury-stay.html",
+        "destination": "/hyderabad/peddagolkonda/11br-farmhouse-pool-waterfall-banquet-home-theatre-hyd1043.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/kollur/luxuryvilla/luxury-2br-villa-in-kollur-hyderabad-luxury-suitessnookerhalf-basketball-court-hyd1005.html",
+        "destination": "/hyderabad/kollur/2br-luxury-suites-half-basket-ball-court-villa-hyd1005.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/10br-pool-villa-in-shamshabad-hyderabad-banquet-hallprojectorgames-hyd1061.html",
+        "destination": "/hyderabad/shamshabad/luxury-10br-pool-villa-banquet-projector-games-hyd1061.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/manikonda/farmhouses/hyd1018-3br-pool-villa.html",
+        "destination": "/hyderabad/manikonda/elegant-3br-terrace-pool-pets-pool-home-theatre-villa-hyd1018.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/hyd1002-2br-pool-villa.html",
+        "destination": "/hyderabad/moinabad/2br-spacious-hall-bbq-pool-villa-hyd1002.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/hyd1060-4br-pool-farmstay.html",
+        "destination": "/hyderabad/moinabad/4br-luxury-swimming-pool-kids-pool-farmhouse-hyd1060.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/hyd1055-4br-pool-farmstay.html",
+        "destination": "/hyderabad/moinabad/7br-net-cricket-stage-pool-farmhouse-hyd1055.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/peddamberpet/farmhouses/hyd1026-4br-pool-villa.html",
+        "destination": "/hyderabad/peddamberpet/spacious-4br-nature-retreat-large-swimming-pool-villa-hyd1026.html",
+        "type": 301
+      },
+      {
+        "source": "/karimnagar/nallagonda/farmhouses/hyd1048-6br-pool-villa.html",
+        "destination": "/karimnagar/nallagonda/6br-pool-side-bar-counter-games-pool-villa-hyd1048.html",
+        "type": 301
+      },
+      {
+        "source": "/collection/urban-getaways",
+        "destination": "/collections/farmhouses-near-city",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/hyd1022-4br-pool-villa.html",
+        "destination": "/hyderabad/medchal/unique-architecture-4br-swimming-pool-lawn-villa-hyd1022.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/5br-pool-villa-in-shamshabad-hyderabad-table-tenniskids-play-area-hyd1031.html",
+        "destination": "/hyderabad/shamshabad/5br-kids-play-area-pool-side-projector-villa-hyd1031.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shankarpally/farmhouses/hyd1059-12br-farmstay.html",
+        "destination": "/hyderabad/shankarpally/12br-rain-dance-discotech-resort-hyd1059.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/budget-friendly-5br-pool-property-in-medchal-hyderabad-home-theaterkids-play-area-hyd1034.html",
+        "destination": "/hyderabad/medchal/budget-villa-5br-pool-kids-home-theatre-hyd1034.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/2br-pool-villa-kids-play-area-hyd1001.html",
+        "destination": "/hyderabad/shamshabad/2br-pool-villa-kids-play-area-hyd1001.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/hyd1050-4br-pool-villa.html",
+        "destination": "/hyderabad/shamirpet/4br-outdoor-dining-party-lawn-pool-villa-hyd1050.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tukkaguda/farmhouses/hyd1015-3br-pool-villa.html",
+        "destination": "/hyderabad/tukkuguda/3br-pool-side-projector-kids-pool-villa-hyd1015.html",
+        "type": 301
+      },
+      {
+        "source": "/location/telangana-manoharabad-kallakal-kucharam",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/peddamberpet/farmhouses/hyd1036-5br-pool-villa.html",
+        "destination": "/hyderabad/peddamberpet/5br-tree-house-kids-play-area-pool-villa-hyd1036.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/hyd1014-3br-pool-farmstay.html",
+        "destination": "/hyderabad/shamirpet/3br-swimming-pool-trekking-farmstay-hyd1014.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tukkaguda/farmhouses/2br-pool-farmhouse-in-tukkaguda-hyderabad-pool-with-kids-poolcricketbadminton-sets-hyd1006.html",
+        "destination": "/hyderabad/tukkuguda/2br-luxury-pool-cricket-set-farmhouse-hyd1006.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/7br-pool-farmhouse-in-tspa-moinabad-hyderabad-projectornet-cricketfoosballstage-hyd1055.html",
+        "destination": "/hyderabad/moinabad/7br-net-cricket-stage-pool-farmhouse-hyd1055.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/vintage-themed-6br-pool-villa-in-shamshabad-hyderabad-projectorkids-play-area-hyd1038.html",
+        "destination": "/hyderabad/shamshabad/vintage-themed-6br-projector-kids-play-area-pool-villa-hyd1038.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/3br-pool-villa-in-shamshabad-hyderabad-courtyard-poolkids-play-areacricketbadminton-hyd1009.html",
+        "destination": "/hyderabad/shamshabad/3br-courtyard-kids-play-area-pool-villa-hyd1009.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/hyd1023-4br-pool-villa.html",
+        "destination": "/hyderabad/shamirpet/4br-lawn-swimming-pool-villa-hyd1023.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/6br-indoor-projector-swimming-pool-villa-hyd1037.html",
+        "destination": "/hyderabad/shamshabad/6br-indoor-projector-swimming-pool-villa-hyd1037.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/ghatkesar/cottages/manduva-style-2br-pool-farmhouse-in-ghatkesar-hyderabad-pool-side-projector-bbq-bonfire-hyd1007.html",
+        "destination": "/hyderabad/ghatkesar/2br-manduva-style-pool-side-projector-bonfire-farmhouse-hyd1007.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/luxury-12br-table-tennis-pool-projector-farmhouse-hyd1063.html",
+        "destination": "/hyderabad/moinabad/luxury-12br-table-tennis-pool-projector-farmhouse-hyd1063.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/peddagolkonda/farmhouses/4br-outdoor-projector-lawn-kids-play-area-pool-farmhouse-hyd1027.html",
+        "destination": "/hyderabad/peddagolkonda/4br-outdoor-projector-lawn-kids-play-area-pool-farmhouse-hyd1027.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/kollur/farmhouses/hyd1004-2br-luxury-pool-stay.html",
+        "destination": "/hyderabad/kollur/2br-outdoor-projector-luxury-pool-farmhouse-hyd1004.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/3br-courtyard-kids-play-area-pool-villa-hyd1009.html",
+        "destination": "/hyderabad/shamshabad/3br-courtyard-kids-play-area-pool-villa-hyd1009.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspa_moinabad/4br-swimming-pool-box-cricket-kids-play-area-farmhouse-hyd1071.html",
+        "destination": "/hyderabad/moinabad/4br-swimming-pool-box-net-cricket-kids-play-area-farmhouse-hyd1071.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/hyd1028-4br-pool-farmstay.html",
+        "destination": "/hyderabad/moinabad/4br-cricket-ground-pool-farmhouse-hyd1028.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/4br-banquet-hall-party-lawn-pool-farmhouse-hyd1057.html",
+        "destination": "/hyderabad/medchal/4br-banquet-hall-party-lawn-pool-farmhouse-hyd1057.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/dundigal/farmhouses/hyd1064-25br-pool-farmstay.html",
+        "destination": "/hyderabad/dundigal/25br-hilltop-football-farmhouse-infinity-pool-hyd1064.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/ghatkesar/farmhouses/4br-swimming-pool-kids-pool-farmhouse-hyd1058.html",
+        "destination": "/hyderabad/ghatkesar/4br-swimming-pool-kids-pool-farmhouse-hyd1058.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/unique-architecture-4br-swimming-pool-lawn-villa-hyd1022.html",
+        "destination": "/hyderabad/medchal/unique-architecture-4br-swimming-pool-lawn-villa-hyd1022.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/budget-friendly-3br-pool-villa-in-medchal-hyderabad-swimming-pool-kids-pool-carroms-hyd1013.html",
+        "destination": "/hyderabad/medchal/3br-swimming-pool-kids-pool-budget-friendly-villa-hyd1013.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tukkuguda/farmhouses/udaipur-themed-6br-rain-dance-games-villa-hyd1045.html",
+        "destination": "/hyderabad/tukkuguda/udaipur-themed-6br-rain-dance-games-villa-hyd1045.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/luxury-8br-villa-in-medchal-hyderabad-outdoor-amphitheater-projector-hall-banquet-hall-hyd1040.html",
+        "destination": "/hyderabad/medchal/luxury-8br-banquet-hall-outdoor-amphitheatre-villa-hyd1040.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/kerala-style-4br-farmhouse-in-medchal-hyderabad-swimming-pool-lush-lawn-pool-projector-hyd1070.html",
+        "destination": "/hyderabad/medchal/kerala-style-4br-swimming-pool-volley-ball-farmhouse-hyd1070.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/luxuryvilla/luxury-8br-banquet-hall-outdoor-amphitheatre-villa-hyd1040.html",
+        "destination": "/hyderabad/medchal/luxury-8br-banquet-hall-outdoor-amphitheatre-villa-hyd1040.html",
+        "type": 301
+      },
+      {
+        "source": "/collection/luxe-pools",
+        "destination": "/collections/luxury-pool-party-farmhouses",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/forest-retreat-6br-pool-kids-play-trek-hyd1039.html",
+        "destination": "/hyderabad/moinabad/forest-retreat-6br-pool-kids-play-trek-hyd1039.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/unique-architecture-4br-indoor-projector-cricket-pool-villa-hyd1021.html",
+        "destination": "/hyderabad/medchal/unique-architecture-4br-indoor-projector-cricket-pool-villa-hyd1021.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/3br-home-theatre-disco-tech-area-pool-farmhouse-hyd1069.html",
+        "destination": "/hyderabad/moinabad/3br-home-theatre-disco-tech-area-pool-farmhouse-hyd1069.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/3br-farmstay-with-pool-in-tspa-moinabad-hyderabad-table-tennis-lush-lawn-hyd1011.html",
+        "destination": "/hyderabad/moinabad/3br-table-tennis-lawn-pool-farmstay-hyd1011.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tukkuguda/farmhouses/3br-pool-side-projector-kids-pool-villa-hyd1015.html",
+        "destination": "/hyderabad/tukkuguda/3br-pool-side-projector-kids-pool-villa-hyd1015.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/4br-swimming-pool-box-cricket-kids-play-area-farmhouse-hyd1071.html",
+        "destination": "/hyderabad/moinabad/4br-swimming-pool-box-net-cricket-kids-play-area-farmhouse-hyd1071.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/4br-bar-counter-table-tennis-pool-property-hyd1052.html",
+        "destination": "/hyderabad/shamshabad/4br-bar-counter-table-tennis-pool-property-hyd1052.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/hyd1052-4br-pool-property.html",
+        "destination": "/hyderabad/shamshabad/4br-bar-counter-table-tennis-pool-property-hyd1052.html",
+        "type": 301
+      },
+      {
+        "source": "/location/telangana-karimnagar-nustulapur-nallagonda-village",
+        "destination": "/https://instafarms.in/telangana/karimnagar/farmhouses-in-nallagonda",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/hyd1067-4br-pool-farmstay.html",
+        "destination": "/hyderabad/shamirpet/4br-football-swimming-pool-farmstay-hyd1067.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/hyd1053-4br-pool-property.html",
+        "destination": "/hyderabad/shamshabad/4br-bar-counter-snooker-pool-property-hyd1053.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/7br-projector-kids-play-area-pool-villa-hyd1047.html",
+        "destination": "/hyderabad/shamshabad/7br-projector-kids-play-area-pool-villa-hyd1047.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/4br-bar-counter-snooker-pool-property-hyd1053.html",
+        "destination": "/hyderabad/shamshabad/4br-bar-counter-snooker-pool-property-hyd1053.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/spacious-5br-rain-dance-kids-play-area-pool-property-hyd1044.html",
+        "destination": "/hyderabad/shamshabad/spacious-5br-rain-dance-kids-play-area-pool-property-hyd1044.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/peddamberpet/farmhouses/6br-indoor-projector-swimming-pool-villa-hyd1037.html",
+        "destination": "/hyderabad/shamshabad/6br-indoor-projector-swimming-pool-villa-hyd1037.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shankarpally/farmhouses/12br-rain-dance-discotech-resort-hyd1059.html",
+        "destination": "/hyderabad/shankarpally/12br-rain-dance-discotech-resort-hyd1059.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/farmhouses/kerala-style-4br-swimming-pool-volley-ball-farmhouse-hyd1070.html",
+        "destination": "/hyderabad/medchal/kerala-style-4br-swimming-pool-volley-ball-farmhouse-hyd1070.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/3br-budget-friendly-poolside-projector-villa-hyd1019.html",
+        "destination": "/hyderabad/moinabad/3br-budget-friendly-poolside-projector-villa-hyd1019.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/2br-wooden-house-water-fountain-pool-property-hyd1062.html",
+        "destination": "/hyderabad/moinabad/2br-wooden-house-water-fountain-pool-property-hyd1062.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/hyd1065-4br-pool-farmhouse.html",
+        "destination": "/hyderabad/moinabad/4br-large-pool-kids-play-area-farmhouse-hyd1065.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/dundigal/farmhouses/25br-hilltop-football-farmhouse-infinity-pool-hyd1064.html",
+        "destination": "/hyderabad/dundigal/25br-hilltop-football-farmhouse-infinity-pool-hyd1064.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/5br-sports-villa-pool-home-theatre-games-hyd1046.html",
+        "destination": "/hyderabad/moinabad/5br-sports-villa-pool-home-theatre-games-hyd1046.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/3br-box-cricket-football-volley-ball-sports-villa-hyd1012.html",
+        "destination": "/hyderabad/moinabad/3br-box-cricket-football-volley-ball-sports-villa-hyd1012.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/5br-kids-play-area-pool-side-projector-villa-hyd1031.html",
+        "destination": "/hyderabad/shamshabad/5br-kids-play-area-pool-side-projector-villa-hyd1031.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/peddagolkonda/farmhouses/luxury-5br-box-cricket-snooker-sports-villa-hyd1035.html",
+        "destination": "/hyderabad/peddagolkonda/luxury-5br-box-cricket-snooker-sports-villa-hyd1035.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/4br-big-hall-projection-screen-jbl-party-box-pool-stay-hyd1024.html",
+        "destination": "/hyderabad/shamirpet/4br-big-hall-projection-screen-jbl-party-box-pool-stay-hyd1024.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/peddamberpet/farmhouses/5br-tree-house-kids-play-area-pool-villa-hyd1036.html",
+        "destination": "/hyderabad/peddamberpet/5br-tree-house-kids-play-area-pool-villa-hyd1036.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/hyd1029-4br-pool-villa.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/4br-swimming-pool-box-net-cricket-kids-play-area-farmhouse-hyd1071.html",
+        "destination": "/hyderabad/moinabad/4br-swimming-pool-box-net-cricket-kids-play-area-farmhouse-hyd1071.html",
+        "type": 301
+      },
+      {
+        "source": "/location/farmhouses-in-manikonda",
+        "destination": "/telangana/hyderabad/farmhouses-in-manikonda",
+        "type": 301
+      },
+      {
+        "source": "/collection/event-friendly",
+        "destination": "/collections/farmhouses-for-events",
+        "type": 301
+      },
+      {
+        "source": "/location/hyderabad/telangana-hyderabad-tukkuguda",
+        "destination": "/telangana/hyderabad/farmhouses-in-tukkuguda",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/hyd1051-4br-pool-property.html",
+        "destination": "/hyderabad/shamshabad/4br-modern-interiors-snooker-pool-property-hyd1051.html",
+        "type": 301
+      },
+      {
+        "source": "/collection/kids-friendly",
+        "destination": "/collections/kids-friendly-farmhouses",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/hyd1012-3br-sports-villa.html",
+        "destination": "/hyderabad/moinabad/3br-box-cricket-football-volley-ball-sports-villa-hyd1012.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/peddagolkonda/farmhouses/hyd1027-4br-pool-farmhouse.html",
+        "destination": "/hyderabad/peddagolkonda/4br-outdoor-projector-lawn-kids-play-area-pool-farmhouse-hyd1027.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/hyd1055-7br-pool-farmstay.html",
+        "destination": "/hyderabad/moinabad/7br-net-cricket-stage-pool-farmhouse-hyd1055.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/hyd1037-6br-pool-villa.html",
+        "destination": "/hyderabad/shamshabad/6br-indoor-projector-swimming-pool-villa-hyd1037.html",
+        "type": 301
+      },
+      {
+        "source": "/medchal/kallakal-kucharam/farmhouses/hyd1057-4br-pool-farmstay.html",
+        "destination": "/hyderabad/medchal/4br-banquet-hall-party-lawn-pool-farmhouse-hyd1057.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/hyd1009-3br-pool-villa.html",
+        "destination": "/hyderabad/shamshabad/3br-courtyard-kids-play-area-pool-villa-hyd1009.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/hyd1041-9br-pool-property.html",
+        "destination": "/hyderabad/moinabad/9br-event-space-pool-side-and-indoor-projectors-property-hyd1041.html",
+        "type": 301
+      },
+      {
+        "source": "/location/telangana-hyderabad-tukkuguda",
+        "destination": "/telangana/hyderabad/farmhouses-in-tukkuguda",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/luxuryvilla/luxury-8br-villa-in-medchal-hyderabad-outdoor-amphitheaterprojector-hallbanquet-hall-hyd1040.html",
+        "destination": "/hyderabad/medchal/luxury-8br-banquet-hall-outdoor-amphitheatre-villa-hyd1040.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/hyd1046-5br-pool-villa.html",
+        "destination": "/hyderabad/moinabad/5br-sports-villa-pool-home-theatre-games-hyd1046.html",
+        "type": 301
+      },
+      {
+        "source": "/page/privacy-policy",
+        "destination": "/privacy-policy",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/peddagolkonda/farmhouses/luxury-5br-sports-villa-in-peddagolkonda-hyderabad-box-cricketsnooker-hyd1035.html",
+        "destination": "/hyderabad/peddagolkonda/luxury-5br-box-cricket-snooker-sports-villa-hyd1035.html",
+        "type": 301
+      },
+      {
+        "source": "/page/terms-conditions",
+        "destination": "/terms-conditions",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/6br-pool-villa-in-shamshabad-hyderabad-indoor-projector-swimming-pool-modern-interiors-hyd1037.html",
+        "destination": "/hyderabad/shamshabad/6br-indoor-projector-swimming-pool-villa-hyd1037.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tukkaguda/farmhouses/hyd1016-3br-pool-villa.html",
+        "destination": "/hyderabad/tukkaguda/3br-large-projector-kids-pool-villa-hyd1016.html",
+        "type": 301
+      },
+      {
+        "source": "/location/telangana-hyderabad-dundigal",
+        "destination": "/hyderabad/farmhouses-in-dundigal",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/5br-pool-villa-in-shamshabad-hyderabad-poolside-projector-table-tennis-kids-play-area-hyd1031.html",
+        "destination": "/hyderabad/shamshabad/5br-kids-play-area-pool-side-projector-villa-hyd1031.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspa_moinabad/3br-pool-farmhouse-in-moinabad-hyderabad-home-theatre-snooker-disco-lighting-pool-area-hyd1069.html",
+        "destination": "/hyderabad/moinabad/3br-home-theatre-disco-tech-area-pool-farmhouse-hyd1069.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tukkuguda/farmhouses/hyd1045-6-br-pool-villa.html",
+        "destination": "/hyderabad/tukkuguda/udaipur-themed-6br-rain-dance-games-villa-hyd1045.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/3br-pool-villa-in-shamshabad-hyderabad-courtyard-pool-kids-play-area-cricket-badminton-hyd1009.html",
+        "destination": "/hyderabad/shamshabad/3br-courtyard-kids-play-area-pool-villa-hyd1009.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/2br-retreat-in-tspa-moinabad-hyderabad-poolside-projector-indoor-home-theater-hyd1003.html",
+        "destination": "/hyderabad/moinabad/2br-retreat-pool-side-projector-indoor-home-theatre-hyd1003.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/4br-pool-farmstay-in-shamirpet-hyderabad-football-badminton-set-swimming-pool-hyd1067.html",
+        "destination": "/hyderabad/shamirpet/4br-football-swimming-pool-farmstay-hyd1067.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/ghatkesar/manduva-style-2br-pool-farmhouse-in-ghatkesar-hyderabad-pool-side-projector-bbq-bonfire-hyd1007.html",
+        "destination": "/hyderabad/ghatkesar/2br-manduva-style-pool-side-projector-bonfire-farmhouse-hyd1007.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/kerala-style-4br-pool-villa-in-shamshabad-hyderabad-indoor-projector-kids-trampoline-hyd1020.html",
+        "destination": "/hyderabad/shamshabad/kerala-style-4br-indoor-projector-kids-trampoline-pool-villa-hyd1020.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/7br-pool-farmhouse-in-tspa-moinabad-hyderabad-projector-net-cricket-foosball-stage-hyd1055.html",
+        "destination": "/hyderabad/moinabad/7br-net-cricket-stage-pool-farmhouse-hyd1055.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/2br-pool-villa-in-shamshabad-hyderabad-large-screen-projector-kids-play-area-fussball-hyd1001.html",
+        "destination": "/hyderabad/shamshabad/2br-pool-villa-kids-play-area-hyd1001.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/4br-farmhouse-with-pool-in-tspa-moinabad-hyderabad-cricket-ground-kids-play-area-hyd1028.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/hyd1025-4br-luxury-pool-villa.html",
+        "destination": "/hyderabad/shamirpet/luxury-4br-film-and-photo-shoot-venue-snooker-pool-villa-hyd1025.html",
+        "type": 301
+      },
+      {
+        "source": "/page/partner-with-us",
+        "destination": "/partner-with-us",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/3br-pool-farmhouse-in-moinabad-hyderabad-home-theatre-snooker-disco-lighting-pool-area-hyd1069.html",
+        "destination": "/hyderabad/moinabad/3br-home-theatre-disco-tech-area-pool-farmhouse-hyd1069.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/vintage-themed-6br-pool-villa-in-shamshabad-hyderabad-projector-kids-play-area-hyd1038.html",
+        "destination": "/hyderabad/shamshabad/vintage-themed-6br-projector-kids-play-area-pool-villa-hyd1038.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/5br-pool-villa-in-tspa-moinabad-hyderabad-semi-outdoor-projector-hyd1033.html",
+        "destination": "/hyderabad/moinabad/budget-friendly-5br-semi-outdoor-projector-pool-villa-hyd1033.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/3br-pool-villa-in-tspa-moinabad-hyderabad-indoor-projector-foosball-lush-lawn-hyd1010.html",
+        "destination": "/hyderabad/moinabad/3br-outdoor-projector-foosball-pool-villa-hyd1010.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/4br-pool-farmhouse-in-medchal-hyderabad-banquet-hall-party-lawn-basketball-hyd1057.html",
+        "destination": "/hyderabad/medchal/4br-banquet-hall-party-lawn-pool-farmhouse-hyd1057.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/hyd1020-4br-pool-villa.html",
+        "destination": "/hyderabad/shamshabad/kerala-style-4br-indoor-projector-kids-trampoline-pool-villa-hyd1020.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspa_moinabad/7br-pool-farmhouse-in-tspa-moinabad-hyderabad-projector-net-cricket-foosball-stage-hyd1055.html",
+        "destination": "/hyderabad/moinabad/7br-net-cricket-stage-pool-farmhouse-hyd1055.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspa_moinabad/4br-pool-farmhouse-in-moinabad-hyderabad-portable-projector-swimming-pool-lush-lawn-hyd1071.html",
+        "destination": "/hyderabad/moinabad/4br-swimming-pool-box-net-cricket-kids-play-area-farmhouse-hyd1071.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/medchal/4br-pool-villa-in-medchal-hyderabad-unique-architecture-lush-lawn-swimming-pool-hyd1022.html",
+        "destination": "/hyderabad/medchal/unique-architecture-4br-swimming-pool-lawn-villa-hyd1022.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/ghatkesar/manduva-style-4br-pool-property-in-ghatkesar-hyderabad-poolside-projector-hyd1030.html",
+        "destination": "/hyderabad/ghatkesar/manduva-style-4br-pool-side-projector-property-hyd1030.html",
+        "type": 301
+      },
+      {
+        "source": "/collection/lavish-retreats",
+        "destination": "/collections/luxury-farmhouses",
+        "type": 301
+      },
+      {
+        "source": "/location/telangana-hyderabad-peddagolkonda",
+        "destination": "/telangana/hyderabad/farmhouses-in-peddagolkonda",
+        "type": 301
+      },
+      {
+        "source": "/location/telangana-hyderabad-shamshabad",
+        "destination": "/telangana/hyderabad/farmhouses-in-shamshabad",
+        "type": 301
+      },
+      {
+        "source": "/location/telangana-hyderabad-medchal",
+        "destination": "/telangana/hyderabad/farmhouses-in-medchal",
+        "type": 301
+      },
+      {
+        "source": "/collection/banquet-hall-properties",
+        "destination": "/collections/farmhouses-with-banquet-halls",
+        "type": 301
+      },
+      {
+        "source": "/collection/kids-play-paradise",
+        "destination": "/collections/kids-friendly-farmhouses",
+        "type": 301
+      },
+      {
+        "source": "/collection/sporting-getaways",
+        "destination": "/collections/farmhouses-with-sports-amenities",
+        "type": 301
+      },
+      {
+        "source": "/collection/celebration-gardens",
+        "destination": "/collections/farmhouses-for-events",
+        "type": 301
+      },
+      {
+        "source": "/collection/home-theatre-escapes",
+        "destination": "/collections/farmhouses-with-home-theatre",
+        "type": 301
+      },
+      {
+        "source": "/collection/green-meadows",
+        "destination": "/collections/nature-stay-farmhouses",
+        "type": 301
+      },
+      {
+        "source": "/collection/majestic-pools",
+        "destination": "/collections/farmhouses-with-large-swimming-pool",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/default-dummy.html",
+        "destination": "/hyderabad/shamshabad/test-property-2-dont-book-test-property-2-dont-book.html",
+        "type": 301
+      },
+      {
+        "source": "/page/our-story",
+        "destination": "/our-story",
+        "type": 301
+      },
+      {
+        "source": "/collection/big-screen-getaways",
+        "destination": "/collections/farmhouses-with-big-screen",
+        "type": 301
+      },
+      {
+        "source": "/collections/[slug]",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/sports-3br-villa-in-tspa-moinabad-hyderabad-box-cricketfootballvolleyballbadminton-hyd1012.html",
+        "destination": "/hyderabad/moinabad/3br-box-cricket-football-volley-ball-sports-villa-hyd1012.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/4br-pool-villa-in-shamirpet-hyderabad-outdoor-diningbadminton-party-lawns-hyd1050.html",
+        "destination": "/hyderabad/shamirpet/4br-outdoor-dining-party-lawn-pool-villa-hyd1050.html",
+        "type": 301
+      },
+      {
+        "source": "/location/farmhouses-in-kollur",
+        "destination": "/telangana/hyderabad/farmhouses-in-kollur",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/3br-farmstay-with-pool-in-tspa-moinabad-hyderabad-table-tennislush-lawn-hyd1011.html",
+        "destination": "/hyderabad/moinabad/3br-table-tennis-lawn-pool-farmstay-hyd1011.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/ghatkesar/farmhouses/manduva-style-2br-farm-house-in-ghatkesar-hyderabad-outdoor-projectorbbqbonfire-hyd1008.html",
+        "destination": "/hyderabad/ghatkesar/2br-manduva-style-outdoor-projector-bbq-farmhouse-hyd1008.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/kerala-style-4br-pool-villa-in-shamshabad-hyderabad-indoor-projectorkids-trampoline-hyd1020.html",
+        "destination": "/hyderabad/shamshabad/kerala-style-4br-indoor-projector-kids-trampoline-pool-villa-hyd1020.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/2br-pool-villa-in-tspa-moinabad-hyderabad-spacious-hallbbqbonfireoutdoor-patio-hyd1002.html",
+        "destination": "/hyderabad/moinabad/2br-spacious-hall-bbq-pool-villa-hyd1002.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tukkaguda/farmhouses/tukkaguda-3br-pool-villa-in-hyderabad-poolside-projectorrain-dancekids-pool-hyd1015.html",
+        "destination": "/hyderabad/tukkuguda/3br-pool-side-projector-kids-pool-villa-hyd1015.html",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/peddagolkonda/farmhouses/4br-pool-farmhouse-in-peddagolkonda-hyderabad-outdoor-projectorkids-play-arealush-lawn-hyd1027.html",
+        "destination": "/hyderabad/peddagolkonda/4br-outdoor-projector-lawn-kids-play-area-pool-farmhouse-hyd1027.html",
+        "type": 301
+      },
+      {
+        "source": "/location/farmhouses-in-peddamberpet",
+        "destination": "/telangana/hyderabad/farmhouses-in-peddamberpet",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/tspamoinabad/farmhouses/4br-farmstay-with-pool-in-tspa-moinabad-hyderabad-cricket-groundkids-play-area-hyd1028.html",
+        "destination": "/hyderabad/moinabad/4br-cricket-ground-pool-farmhouse-hyd1028.html",
+        "type": 301
+      },
+      {
+        "source": "/location/farmhouses-in-peddagolkonda",
+        "destination": "/telangana/hyderabad/farmhouses-in-peddagolkonda",
+        "type": 301
+      },
+      {
+        "source": "/location/farmhouses-in-shamirpet",
+        "destination": "/telangana/hyderabad/farmhouses-in-shamirpet",
+        "type": 301
+      },
+      {
+        "source": "/collection/nature-stay-farmhouses",
+        "destination": "/collections/nature-stay-farmhouses",
+        "type": 301
+      },
+      {
+        "source": "/location/farmhouses-in-dundigal",
+        "destination": "/telangana/hyderabad/farmhouses-in-dundigal",
+        "type": 301
+      },
+      {
+        "source": "/location/telangana-hyderabad-shamirpet",
+        "destination": "/telangana/hyderabad/farmhouses-in-shamirpet",
+        "type": 301
+      },
+      {
+        "source": "/location/",
+        "destination": "/all-locations",
+        "type": 301
+      },
+      {
+        "source": "/location/farmhouses-in-shankarpally",
+        "destination": "/telangana/hyderabad/farmhouses-in-shankarpally",
+        "type": 301
+      },
+      {
+        "source": "/location/farmhouses-in-ghatkesar",
+        "destination": "/hyderabad/farmhouses-in-ghatkesar",
+        "type": 301
+      },
+      {
+        "source": "/location/farmhouses-in-tspa-moinabad",
+        "destination": "/telangana/hyderabad/farmhouses-in-moinabad",
+        "type": 301
+      },
+      {
+        "source": "/location/farmhouses-in-tukkuguda",
+        "destination": "/telangana/hyderabad/farmhouses-in-tukkuguda",
+        "type": 301
+      },
+      {
+        "source": "/location/undefined",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/location/farmhouses-in-medchal",
+        "destination": "/telangana/hyderabad/farmhouses-in-medchal",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamshabad/farmhouses/hyd1061-10br-pool-property.html",
+        "destination": "/hyderabad/shamshabad/luxury-10br-pool-villa-banquet-projector-games-hyd1061.html",
+        "type": 301
+      },
+      {
+        "source": "/location/farmhouses-in-nallagonda",
+        "destination": "/telangana/karimnagar/farmhouses-in-nallagonda",
+        "type": 301
+      },
+      {
+        "source": "/hyderabad/shamirpet/farmhouses/golden-serene.html",
+        "destination": "/hyderabad/shamirpet/luxury-4br-film-and-photo-shoot-venue-snooker-pool-villa-hyd1025.html",
+        "type": 301
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|ico)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(css|js|woff2|ttf)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000, immutable"
+          }
+        ]
+      }
+    ],
+    "frameworksBackend": {
+      "region": "asia-south1",
+      "memory": "4GiB"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+// containers/BenefitsSection/index.module.scss
+
+.container {
+    margin: 0 auto;
+    text-align: start;
+}
+
+.mainTitle {
+    font-size: 24px; // 40px
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.3rem;
+    
+    @media (max-width: 765px) {
+        font-size: 18px; // 40px
+    }
+}
+
+.subTitle {
+    font-size: 18px; // 18px
+    color: #7f8c8d;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+    
+    @media (max-width: 765px) {
+        font-size: 14px; // 40px
+    }
+}
+
+.benefitsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    // Responsive adjustments
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 675px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.benefitCard {
+    background-color: #8c684d; // A light, clean background
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(44, 62, 80, 0.1);
+
+        .iconWrapper {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            color: #f5f5f5; // Change icon color on hover
+        } 
+    }
+
+}
+
+.iconWrapper {
+    margin-bottom: 20px;
+    color: #d4d4d4;
+    transition: transform 0.3s ease, box-shadow 1s ease;
+}
+
+.cardTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.cardDescription {
+    font-size: 16px; 
+    color: #f5f5f5;
+    font-weight: 400;
+    line-height: 1.7;
+    @media (max-width: 1000px) {
+        font-size: 13px;
+    }
+    
+    @media (max-width: 675px) {
+        font-size: 11px;
+    }
+}

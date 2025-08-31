@@ -1,0 +1,25 @@
+@import 'styles/mixins.scss';
+@import 'styles/colors.scss';
+@import 'styles/fonts.scss';
+
+.error {
+    @include heading3;
+    color: $orange;
+
+    margin: 54px auto;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.loader {
+    width: 100%;
+    margin-top: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

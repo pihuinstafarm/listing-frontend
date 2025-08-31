@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "jarvis-a6aba",
+    "prod": "jarvis-a6aba",
+    "dev": "jarvisdev-b6c41"
+  },
+  "targets": {},
+  "etags": {}
+}

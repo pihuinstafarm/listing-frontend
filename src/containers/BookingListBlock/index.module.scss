@@ -1,0 +1,41 @@
+@import 'styles/mixins.scss';
+@import 'styles/colors.scss';
+@import 'styles/fonts.scss';
+
+.contentblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .block{
+        width: 48%;
+        cursor: pointer;
+        h6{
+            margin-bottom: 20px;
+        }
+        .thumbnail{
+            width: 100%;
+            height: auto;
+            margin: 0;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+}
+
+
+@media (max-width: $small-screen) {
+
+    .contentblock {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .block{
+            width: 100%;
+            
+        }
+        .block:nth-child(2) h6{
+            margin-top: 20px;
+        }
+    }
+}

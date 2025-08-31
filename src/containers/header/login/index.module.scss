@@ -1,0 +1,45 @@
+@import 'styles/mixins.scss';
+@import 'styles/colors.scss';
+
+.wrapper {
+    position: relative;
+    width: 1100px;
+    height: 700px;
+
+    background-color: $gray;
+    border-radius: 14px;
+
+    display: flex;
+
+    .content {
+        width: 550px;
+        height: 100%;
+        border-radius: 14px;
+        background-color: $white;
+    }
+
+    .close {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+
+        background-color: unset;
+        border: none;
+        box-shadow: unset;
+
+        svg {
+            fill: $orange;
+        }
+    }
+}
+
+@media (max-width: $small-screen) {
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+
+        .content {
+            width: 100vw;
+        }
+    }
+}

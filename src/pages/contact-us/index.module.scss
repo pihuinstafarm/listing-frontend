@@ -1,0 +1,108 @@
+@import 'styles/mixins.scss';
+@import 'styles/colors.scss';
+
+.contact_section{
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;
+    justify-content:space-between;
+    @media (max-width: $small-screen) {
+        flex-direction: column;
+        gap:10px;
+    }
+    .section_left{
+        width: 40%;
+        background-color: #CDEAE1;
+        padding: 5%;
+        color: #000;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        p, a{
+            color: #000;
+            display: flex;
+            flex-direction: row;
+            gap:5px;
+            align-items: center;
+            cursor: pointer;
+            margin: 5px 0px;
+            @media (max-width: $small-screen) {
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+            }
+            svg{
+                fill: #fff;
+                stroke:#000;
+            }
+        }
+        p:hover,a:hover{
+            color: #fff;
+        }
+        @media (max-width: $small-screen) {
+            width: 100%;
+            justify-content: center;
+            h1,h4{
+                text-align: center;
+                width: 100%;
+            }
+        }
+        
+    }
+    .section_right{
+        width: 60%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        @media (max-width: $small-screen) {
+            width: 100%;
+            margin: 20px 0;
+        }
+        gap: 20px;
+        .section_right_grid{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .grid_box{
+                border: 1px solid #444;
+                border-radius: 10px;
+                height: auto;
+                width: 200px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: flex-start;
+                cursor: pointer;
+                padding: 20px 5px;
+                max-width: 30%;
+                svg{
+                    width: 45px;
+                }
+                @media (max-width: $small-screen) {
+                    max-width: 100%;
+                    width: 47%;
+                    height: auto;
+                    padding: 15px 0px;
+                }
+                p{
+                    text-align: center;
+                    margin: 20px 0 0 0;
+                }
+            }
+            .grid_box:hover{
+                border:1px solid #444;
+                background-color: #CDEAE1;
+            }
+            .grid_box_large{
+                @media (max-width: $small-screen) {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

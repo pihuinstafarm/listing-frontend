@@ -1,0 +1,120 @@
+@import 'styles/mixins.scss';
+@import 'styles/colors.scss';
+@import 'styles/fonts.scss';
+
+.heading {
+    font-size: 24px;
+}
+
+.subheading {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.swiper,
+.swiper-wrapper {
+    @media (max-width: $small-screen) {
+        will-change: transform;
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}
+
+.swiper-wrapper {
+    height: auto
+}
+
+.error {
+    @include heading3;
+    color: $orange;
+
+    margin: 54px auto;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.loader {
+    width: 100%;
+    margin-top: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+
+    a {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100% !important;
+        height: 120px !important;
+        text-align: center;
+        white-space: pre-line;
+
+        background-image: url('/assets/images/location_bg.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        padding-top: 20px;
+        font-family: MontserratBold;
+        color: #000;
+        font-size: 14px;
+
+        @media (max-width: $small-screen) {
+            padding: 15px 5px 0;
+            font-size: 9px;
+            margin: -21px 5px 0 5px;
+        }
+
+    }
+
+    .location {
+        padding: 0;
+        background-color: aquamarine;
+        background-image: url('/assets/images/bg_line.webp');
+        background-repeat: no-repeat;
+        background-position: top;
+        margin: 0px !important;
+        font-family: MontserratBold;
+        color: #000;
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        white-space: nowrap;
+        width: 100% !important;
+        height: 120px !important;
+        overflow: scroll;
+        justify-content: center;
+        cursor: pointer;
+        padding: 0px;
+
+        @media (max-width: $small-screen) {
+            // height: 85px !important;
+            // margin: 0px 0px!important;
+            // padding: 0 5px;
+        }
+
+
+    }
+}

@@ -1,0 +1,166 @@
+@import './fonts.scss';
+@import './colors.scss';
+
+$low-resolution: 1400px;
+$small-screen: 768px;
+
+@mixin heading1 {
+    @include montserratFont;
+    font-size: 64px;
+    line-height: 80px;
+
+    @media (max-width: $low-resolution) {
+        font-size: 56px;
+        line-height: 70px;
+    }
+
+    @media (max-width: $small-screen) {
+        font-size: 32px;
+        line-height: 48px;
+    }
+}
+
+@mixin heading2 {
+    @include montserratFont;
+    font-size: 30px;
+    line-height: 38px;
+
+    @media (max-width: $low-resolution) {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    @media (max-width: $small-screen) {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@mixin heading3 {
+    @include montserratFont;
+    font-size: 24px;
+    line-height: 30px;
+
+    @media (max-width: $low-resolution) {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    @media (max-width: $small-screen) {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@mixin heading4 {
+    @include montserratFont;
+    font-size: 22px;
+    line-height: 28px;
+
+    @media (max-width: $low-resolution) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    @media (max-width: $small-screen) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@mixin sidebarText {
+    @include montserratFont;
+    font-size: 18px;
+    line-height: 22px;
+
+    @media (max-width: $low-resolution) {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    @media (max-width: $small-screen) {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+@mixin subHeading {
+    @include montserratFont;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (max-width: $low-resolution) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    @media (max-width: $small-screen) {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
+@mixin label1 {
+    @include montserratFont;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+
+    @media (max-width: $low-resolution) {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    @media (max-width: $small-screen) {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+@mixin description {
+    @include montserratFont;
+    font-size: 18px;
+    line-height: 22px;
+
+    @media (max-width: $low-resolution) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    @media (max-width: $small-screen) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@mixin tiny {
+    @include montserratFont;
+    font-size: 12px;
+    line-height: 14px;
+
+    @media (max-width: $low-resolution) {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    @media (max-width: $small-screen) {
+        font-size: 8px;
+        line-height: 10px;
+    }
+}
+
+@mixin mini {
+    @include montserratFont;
+    font-size: 8px;
+    line-height: 10px;
+
+    @media (max-width: $low-resolution) {
+        font-size: 6px;
+        line-height: 8px;
+    }
+
+    @media (max-width: $small-screen) {
+        font-size: 6px;
+        line-height: 8px;
+    }
+}

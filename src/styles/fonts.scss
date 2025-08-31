@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url(./fonts/Montserrat-Bold.ttf);
+    font-display: swap;
+}
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url(./fonts/Montserrat-SemiBold.ttf);
+    font-display: swap;
+}
+@font-face {
+    font-family: MontserratLight;
+    src: url(./fonts/Montserrat-Light.ttf);
+    font-display: swap;
+}
+
+
+@mixin montserratFont {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    color: $textGray;
+}

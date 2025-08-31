@@ -1,0 +1,46 @@
+@import 'styles/mixins.scss';
+@import 'styles/colors.scss';
+
+.section_heading{
+    font-size: 20px;
+}
+.form_section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+.form_left, .form_right{
+    width:48%;
+   
+}
+.textfield{
+    margin: 20px 0px!important;
+    width: 100%!important;
+
+}
+.inner_row{
+    padding: 0px!important;
+    .textfield{
+        min-width: 95%;
+    }
+}
+
+.submit_row{
+    justify-content: flex-end;
+    padding: 20px 0!important;
+    button{
+        width: auto;
+        color: #8c684d !important;
+    }
+}
+@media (max-width: $small-screen) {
+
+.form_left, .form_right{
+    width:100%;
+   
+}
+    
+}

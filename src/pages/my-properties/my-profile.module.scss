@@ -1,0 +1,73 @@
+@import 'styles/mixins.scss';
+@import 'styles/colors.scss';
+
+.textInput{
+    margin: 0px 5px;
+    font-size: 14px;
+    border: 1px solid rgba(140, 104, 77, 0.5);
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 100%;
+    max-width: 250px;
+    }
+
+    .textInput::before,.textInput::after {
+        border-bottom:0px!important
+    }
+    
+.bookingWrapper{
+    background: #fff;
+    width: 50%;
+    left: 25%;
+    padding: 15px;
+    @media (max-width: $small-screen) {
+        width: 90%;
+        left: 5%;
+    }
+ .header{
+width: 100%;
+h1{
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+    margin: 0;
+}
+h2{
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+}
+ }
+ .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+
+    .row_btns{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    button, .solidbtn{
+        margin: 20px 0px;
+        align-self: flex-end;
+    }
+    p{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        span{
+            font-weight: 600;
+            margin-right: 10px;
+        }
+    }
+    
+ }
+
+}

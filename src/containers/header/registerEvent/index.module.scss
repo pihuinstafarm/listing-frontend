@@ -1,0 +1,111 @@
+@import 'styles/mixins.scss';
+@import 'styles/colors.scss';
+
+.DateRangePickerSection{
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+}
+.wrapper {
+    position: relative;
+    width: 550px;
+    height: 90vh;
+    overflow: auto;
+    background-color: $gray;
+    border-radius: 14px;
+
+    display: flex;
+
+    .content {
+        width: 100%;
+        height: 100%;
+        border-radius: 14px;
+        background-color: $white;
+        padding: 20px;
+        overflow: auto;
+        .form_row{
+            width:100%;
+            margin:15px 0px;
+            .input_text{
+                width: 100%;
+                height: auto;
+            }
+            .input_textarea{
+                width: 100%;
+                border-radius: 8px;
+                padding: 5px 10px;
+                border: 1px solid #8C684D!important;
+            }
+            label{
+                width: 100%;
+                font-size: 16px;
+                font-weight: 600;
+
+            }
+
+            .custom_select_box{
+                width: 100%;
+                background: #FFFFFF;
+                box-shadow: 0px 4.66234px 16.3182px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                padding: 15px;
+                color:#8C684D;
+                font-size: 16px;
+                letter-spacing: 0.8px!important;
+                
+            }
+            .custom_select_box_option{
+                width: 100%;
+                background: #FFFFFF;
+                margin:10px 0px;
+                box-shadow: 0px 4.66234px 16.3182px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                padding: 10px;
+                .item{
+                    font-size: 14px;
+                    padding: 5px;
+                    margin: 0;
+                    cursor: pointer;
+                }
+                .item:hover{
+                    color: #8C684D;
+                    font-weight: 600;
+                }
+            }
+            .submit{
+                width: 100%;
+                margin: 10px 0px ;
+                padding: 15px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .close {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        background-color: #fff;
+        border: 1px solid #8C684D;
+        box-shadow: unset;
+        z-index: 9;
+        width: 30px;
+        height: 30px;
+
+        svg {
+            fill: $orange;
+        }
+    }
+}
+
+@media (max-width: $small-screen) {
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+
+        .content {
+            width: 100vw;
+        }
+    }
+}

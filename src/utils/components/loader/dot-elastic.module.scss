@@ -1,0 +1,86 @@
+.dotElastic {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #f07f6d;
+    color: #f07f6d;
+    animation: dotElastic 1s infinite linear;
+}
+.dotElastic::before,
+.dotElastic::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+.dotElastic::before {
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #f07f6d;
+    color: #f07f6d;
+    animation: dotElastic-before 1s infinite linear;
+}
+.dotElastic::after {
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #f07f6d;
+    color: #f07f6d;
+    animation: dotElastic-after 1s infinite linear;
+}
+
+@keyframes dotElastic-before {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1, 1.5);
+    }
+    50% {
+        transform: scale(1, 0.67);
+    }
+    75% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+@keyframes dotElastic {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1, 1.5);
+    }
+    75% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+@keyframes dotElastic-after {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1, 0.67);
+    }
+    75% {
+        transform: scale(1, 1.5);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}

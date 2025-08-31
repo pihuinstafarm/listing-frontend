@@ -1,0 +1,184 @@
+@import './colors.scss';
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    width: calc(50% - 2* var(--swiper-scrollbar-sides-offset, 1%))!important;
+    left: calc(25% - 2* var(--swiper-scrollbar-sides-offset, 1%))!important;
+    top:95%!important;
+}
+
+.swiper-pagination{
+    position: relative!important;
+}
+.header_slider{
+    position: relative!important;
+}
+.header_slider .swiper-pagination{
+    position: absolute!important;
+    top:80%!important;
+    bottom: unset !important;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    transition: all 300ms ease-in;
+    background: #8C684D !important;
+}
+
+.swiper-pagination-bullet-active {
+    transform: scale(1.5) !important;
+    margin: 0 6px !important;
+    background: $gray !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #8C684D !important;
+    font-weight: 800;
+    transform: scale(0.5);
+    background: #FFF;
+    width: 50px!important;
+    height: 50px!important;
+    border-radius: 25px;
+    padding: 10px!important;
+    @media (max-width: $small-screen) {
+        display: none!important;
+    }
+}
+.header_slider{
+.swiper-button-prev, .swiper-button-next{
+    z-index: 99999999999!important;
+    height: 90px !important;
+    border-radius: 0!important;
+    border: 1px solid #FFF;
+}
+.swiper-button-next{
+    right: 70px!important;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 35px!important;
+    z-index: 99999999999!important;
+   
+}
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    
+    transform: translateY(100%);
+   
+}
+.swiper-slide img {
+    
+    border-radius: 20px;
+}
+.inner_swiper{
+    
+    width: 100%;
+    .swiper-wrapper{
+        height: auto;
+    }
+    .swiper-slide img {
+        object-fit: unset !important;
+        width: 100% !important;
+        border-radius: 10px 10px 0 0 ;
+       
+    }
+}
+
+
+.inner_swiper.properties_swiper{
+    height:auto;
+    
+    padding-top: 45px;
+    padding-bottom: 45px;
+    .swiper-button-prev,
+    .swiper-button-next {
+            top:5%!important;
+            color: #8C684D !important;
+            background: #fff!important;
+    }
+    .swiper-button-prev{
+        left:0!important;
+    }
+    .swiper-button-next {
+            right:0!important;
+    }
+}
+
+.inner_swiper.collection_swiper{
+    height:auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    .swiper-button-prev,
+    .swiper-button-next {
+            top:5%!important;
+    }
+    .swiper-button-prev{
+        left:0!important;
+    }
+    .swiper-button-next {
+            right:0!important;
+    }
+}
+
+.inner_swiper.top_locations{
+    touch-action: pan-y;
+     -webkit-overflow-scrolling: touch;
+     padding-top: 45px;
+    .swiper-button-prev,
+    .swiper-button-next {
+            top:5%!important;
+            color: #8C684D !important;
+            background: #fff!important;
+    }
+    .swiper-button-prev{
+        left:0!important;
+    }
+    .swiper-button-next {
+            right:0!important;
+    }
+
+    .destination-slide{
+        background-image: url('/assets/images/bg_line.webp');
+        background-repeat: no-repeat;
+        background-position: top;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.property_banner{
+    .swiper-wrapper{
+        display: grid;
+        display: -webkit-grid;
+        grid-auto-flow:column dense;
+        grid-template-rows:1fr 1fr; /* 2 rows */
+        grid-auto-columns:48%;
+        gap: 15px;
+    }
+    .swiper-wrapper.swiper-slide:nth-child(4n + 2) { 
+        grid-row:1; 
+        gap: 0px;
+     }
+}
+
+
+.roomslider{
+    .swiper-wrapper{
+        margin-top:50px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: #000!important;
+        transform: scale(0.5);
+        background: rgba(255,255,255,0.5);
+        margin-top:0px!important;
+        top:-5px!important;
+    } 
+    .swiper-slide img {
+        max-height: 500px!important;
+    }
+}

@@ -1,0 +1,65 @@
+@import 'styles/mixins.scss';
+@import 'styles/colors.scss';
+
+.wrapper {
+    padding: 60px 12px 12px;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .header {
+        @include heading2;
+        color: $white;
+        font-family: 'Montserrat';
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .subHeader {
+        @include heading3;
+        color: $white;
+        font-weight: 400;
+        font-family: 'MontserratLight';
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        gap: 44px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+
+            .img {
+                width: 64px;
+                height: 64px;
+                background-color: #f2f7f2;
+                border: 0.72px solid #f7a072;
+                border-radius: 50%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text {
+                @include subHeading;
+                color: $white;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: $small-screen) {
+    .wrapper {
+        display: none;
+    }
+}

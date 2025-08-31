@@ -1,0 +1,318 @@
+@import 'styles/mixins.scss';
+@import 'styles/colors.scss';
+@import 'styles/fonts.scss';
+
+
+.wrapper {
+    width: 100vw;
+    position: relative;
+    background: #5DC5CD url('/assets/images/desktop_bg_new.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 130px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .whatsapp_icon {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        z-index: 19;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        svg.phone {
+            background: #8C684D;
+            padding: 10px;
+            width: 50px;
+            border-radius: 50%;
+            border: 1px solid #8C684D;
+            fill: #fff;
+
+        }
+
+        svg.whatsapp {
+            background: #008000;
+            padding: 10px;
+            width: 50px;
+            border-radius: 50%;
+            border: 1px solid #008000;
+            fill: #fff;
+
+        }
+
+        @media (max-width: $small-screen) {
+            bottom: 75px;
+        }
+
+        img {
+            width: 50px;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    .subscribe {
+        width: 90%;
+        margin: auto;
+        background-color: #CDEAE1;
+        border-radius: 15px;
+        margin-top: -50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .subscribeLeft {
+            width: auto;
+            padding: 30px;
+
+            h4 {
+                font-size: 42px;
+                color: #405B76;
+                font-family: MontserratBold;
+                margin-bottom: 15px;
+            }
+
+            h6 {
+                font-size: 22px;
+                color: #405B76;
+                font-family: MontserratBold;
+            }
+
+            p {
+                font-size: 12px;
+                color: #405B76;
+            }
+
+            .subscribeInput {
+                display: flex;
+                margin-top: 20px;
+                flex-direction: row;
+
+                button {
+                    background: #405B76;
+                    margin-left: 10px;
+                }
+
+            }
+        }
+
+        .subscribeRight {
+            width: 400px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .menus {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        margin: 30px auto 30px;
+
+        ul {
+            width: 25%;
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            color: #000000;
+
+            li {
+                width: 100%;
+                font-size: 16px;
+
+                img {
+                    display: none;
+                }
+
+                a {
+                    font-size: 14px;
+                    color: #000000;
+                }
+
+                a:hover {
+                    color: #fff;
+                }
+
+            }
+
+            li:nth-child(1) {
+                font-family: MontserratBold;
+                margin-bottom: 10px;
+
+                a {
+                    font-family: MontserratBold;
+                    font-size: 18px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    .menuseprator {
+        width: 80%;
+        margin: auto;
+        color: #000000;
+        text-align: center;
+        border-top: 1px solid #000000;
+        padding: 20px 0;
+        font-size: 12px;
+
+        p {
+            color: #000000;
+        }
+    }
+
+    .staticmenu {
+        width: 100%;
+        margin: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 20px;
+
+        .staticmenuLeft {
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+            align-items: center;
+            font-size: 12px;
+
+            a {
+                margin-left: 5px;
+            }
+        }
+
+        .staticmenuRight {
+            width: 40%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+    }
+
+}
+
+
+@media (max-width: $small-screen) {
+
+
+    .wrapper {
+        background: #ffffff url('/assets/images/mob_footer_bg.webp');
+        background-size: cover;
+        padding-top: 160px;
+        margin-top: 0;
+
+        .menus {
+            flex-direction: column;
+            margin: 0 auto;
+
+            ul {
+                width: 100%;
+                margin-bottom: 10px;
+
+                li {
+                    h3 {
+                        font-size: 10px;
+                    }
+
+                    display: none;
+
+                    a {
+                        padding-bottom: 0px;
+
+                    }
+                }
+
+                li:nth-child(1) {
+                    display: flex;
+                    flex-direction: row;
+                    background: url('/assets/images/arrow_down.webp');
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    align-items: center;
+                    margin-bottom: 0px;
+                    font-size: 14px;
+
+                    img {
+                        height: fit-content;
+                        display: block;
+                        margin-right: 10px;
+                    }
+
+                    a {
+                        border-bottom: 1px solid #000;
+                        width: 100%;
+                        padding-bottom: 10px;
+                        margin-left: 10px;
+                        font-size: 12px;
+                    }
+                }
+
+            }
+
+            ul.active {
+                li {
+                    display: flex;
+                    flex-direction: row;
+
+                    a {
+                        border-bottom: 1px solid #000;
+                        width: 100%;
+                        padding: 5px 0px;
+                        margin-left: 30px;
+                        font-size: 12px;
+                    }
+
+                }
+
+                li:nth-child(1) {
+                    background: url('/assets/images/arrow_up.webp');
+                    background-repeat: no-repeat;
+                    background-position: right;
+
+                    img {
+                        height: fit-content;
+                        margin-right: 10px;
+                    }
+
+                    a {
+                        border-bottom: 1px solid #000;
+                        width: 100%;
+                        padding: 10px 0px;
+                        margin-left: 0px;
+
+                    }
+
+                }
+            }
+        }
+
+        .menuseprator {
+            display: none;
+        }
+
+        .staticmenu {
+            flex-direction: column;
+
+            .staticmenuLeft {
+                width: 100%;
+                justify-content: center
+            }
+
+            .staticmenuRight {
+                width: 100%;
+                justify-content: space-around;
+                margin-top: 20px;
+            }
+        }
+    }
+}

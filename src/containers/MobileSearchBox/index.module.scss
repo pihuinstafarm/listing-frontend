@@ -1,0 +1,220 @@
+@import 'styles/mixins.scss';
+@import 'styles/colors.scss';
+
+.searchbox{
+    width: 90%;
+    background-color: #fff;
+    margin: 15px 5%;
+    .innnerwrapper{
+        display: flex;
+        border: 1px solid #D6D6D6;
+        background-color: #fff;
+        align-items: center;
+        padding:5px 10px;
+        border-radius: 10px;
+       .searchinput{
+        width:100%;
+        border:0px solid #fff;
+        background-color: #fff;
+        padding: 5px;
+        color: #878787;
+       }
+       .searchinput::before,.searchinput::after {
+        border-bottom: 0px solid #fff
+       }
+    }
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        .tabs{
+            display: flex;
+            flex-direction: row;
+            p{
+                margin: 0 5px;
+                padding: 0px;
+                color: #717171;
+                font-size: 16px;
+                font-family: MontserratBold;
+            }
+            p.active{
+                color: #222222;
+                border-bottom: 2px solid #222222
+            }
+        }
+    }
+    .content {
+    width: 100vw;
+    height: 100%;
+    border-radius: 14px;
+    background-color: #fff;
+    .searchitembox{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+        margin: 5%;
+        padding: 20px;
+        font-size: 16px;
+        font-family: MontserratSemiBold;
+        align-items: center;
+        justify-content: space-between;
+        .values{
+            width: 100%;
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+        justify-content: space-between;
+        }
+        .label{
+            color: #717171;
+            font-family: MontserratSemiBold;
+        }
+        .value{
+            color: #8C684D;
+            font-family: MontserratSemiBold;
+        }
+    }
+
+    .searchitemboxChild{
+        display: none;
+    }
+    .searchitembox.active {
+        .searchitemboxChild{
+            display: block;
+            width: 100%;
+            h1{
+                font-family: MontserratBold;
+                font-size: 20px;
+            }
+            .searchbox{
+                width: 100%;
+                margin:10px 0px;
+            }
+            button{
+                float: right;
+            }
+            .rowbox{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 10px 0px;
+                border-bottom: 1px solid #8A8A8A;
+                padding-bottom: 10px;
+                .rowboxlabel{
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    p{
+                        font-size: 12px;
+                        font-weight: 800;
+                    }
+                    span{
+                        font-size: 12px;
+                        font-weight: 100;
+                    }
+                }
+                .rowboxoption{
+                    display: flex;
+                    flex-direction: row;
+                    width: 50%;
+                    justify-content: flex-end;
+                    span{
+                        border: 1px solid #8C684D;
+                        color: #8C684D; 
+                        margin: 0 5px;
+                        border-radius: 5px;
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        align-content: center;
+                        justify-content: center;
+                    }
+                    span.value{
+                        border: 0px solid #8C684D;
+                        margin:0;
+                    }
+                    
+                }
+                }
+        } 
+    }
+    .searchapplybox{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+        margin: 15% 5% 0 5%;
+        padding: 20px;
+        font-size: 16px;
+        font-family: MontserratSemiBold;
+        align-items: center;
+        justify-content: space-between;
+        .label{
+            color: #5DC5CD;
+            font-family: MontserratSemiBold;
+        }
+        .value{
+            background-color: #8C684D;
+            font-family: MontserratSemiBold;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            border-radius: 10px;
+            color: #fff;
+            align-items: center;
+            svg{
+                margin-right: 5px;
+
+            }
+        }
+
+    }
+    }
+    .close {
+        position: absolute;
+        left: 16px;
+        background-color: #fff;
+        border: 1px solid #B0B0B0;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        box-shadow: unset;
+
+        svg {
+            fill: #000;
+        }
+    }
+    .optionList{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 100px;
+        overflow: auto;
+        gap: 5px;
+        p{
+            width: 48%;
+            border:1px solid #EBEBEB;
+            font-size: 12px;
+            color: #8C684D;
+            background: #EBEBEB;
+            padding: 5px;
+            border-radius: 5px;
+            height: max-content;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@import 'styles/mixins.scss';
+@import 'styles/colors.scss';
+
+.wrapper {
+    display: flex;
+    padding: 76px 96px;
+    flex-direction: column;
+    align-items: center;
+
+    .header {
+        @include subHeading;
+        width: 380px;
+        text-align: center;
+        margin: 68px 0 48px;
+        color: #667085;
+    }
+
+    .footer {
+        @include label1;
+        font-weight: 400;
+        text-align: center;
+        color: #344054;
+        margin-top: 24px;
+
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        .button {
+            color: $orange;
+            cursor: pointer;
+        }
+    }
+}
+
+.label {
+    @include label1;
+    letter-spacing: 0.8px;
+    color: rgba($color: #344054, $alpha: 0.4);
+
+    width: 80px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: no-drop;
+
+    &.enable {
+        color: $orange;
+        cursor: pointer;
+    }
+
+    margin: 12px 0 24px;
+}
+
+@media (max-width: $small-screen) {
+    .wrapper {
+        padding: 48px 0;
+
+        .header {
+            width: 100%;
+        }
+    }
+}

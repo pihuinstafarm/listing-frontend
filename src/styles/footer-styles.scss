@@ -1,0 +1,92 @@
+@import './fonts.scss';
+
+
+.page_content {
+    @include montserratFont;
+    margin: 5% auto;
+}
+
+.page_content .row {
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.page_content h1 {
+    font-size: 28px;
+    margin: 32px 0px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #8c684d;
+    @media (max-width: $small-screen) {
+        font-size: 24px;
+        margin: 15px 0px;
+    }
+}
+.page_content h3 {
+    font-size: 18px;
+    float: left;
+    width: 100%;
+    margin: 5px 0px;
+}
+.page_content h4 {
+    font-size: 16px;
+    float: left;
+    width: 100%;
+    margin: 5px 0px;
+}
+.page_content p {
+    font-size: 14px;
+    float: left;
+    width: 100%;
+    margin: 5px 0px;
+}
+.page_content ul {
+    margin-left: 20px;
+}
+
+.contact_us h3,
+.contact_us h4 {
+    text-align: center;
+}
+.page_content ul li {
+    font-size: 14px;
+    float: left;
+    width: 100%;
+    margin: 2px 0px;
+    list-style-type: disc;
+}
+
+.page_content table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    min-width: max-content;
+}
+.page_content table thead {
+    font-weight: bold;
+    text-align: center;
+    color: #8c684d;
+}
+.page_content table td {
+    padding: 10px 15px;
+    border: 1px solid #000;
+}
+.page_content.contact_us table td,
+.page_content.contact_us table {
+    border: 0px solid #000;
+}
+.page_content.contact_us table thead {
+    text-align: left;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover{
+    color: #fff;
+}
