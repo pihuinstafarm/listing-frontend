@@ -78,13 +78,33 @@ export async function getStaticPaths() {
 
         // 3. Get all paths for Individual CMS Pages
         // URL structure : /[cms-slug]
-        let cmsPages = await cmsServices.getAllPages()
-        const cmsPaths = cmsPages.map((page) => ({
-            params: { slug: [page.slug] },
-        }))
+        let cmsPages = []
+        try {
+            cmsPages = await cmsServices.getAllPages()
+            if (!Array.isArray(cmsPages)) {
+                console.error('CMS pages is not an array:', cmsPages)
+                cmsPages = []
+            }
+        } catch (error) {
+            console.error('Error fetching CMS pages:', error)
+            cmsPages = []
+        }
+        
+        const cmsPaths = cmsPages
+            .filter((page) => page && page.slug && typeof page.slug === 'string')
+            .map((page) => ({
+                params: { slug: [page.slug] },
+            }))
 
         // 4. Combine both sets of paths
         const paths = [...locationPaths, ...propertyPaths, ...cmsPaths]
+        
+        console.log('Generated paths summary:', {
+            locationPaths: locationPaths.length,
+            propertyPaths: propertyPaths.length,
+            cmsPaths: cmsPaths.length,
+            totalPaths: paths.length
+        })
 
         return {
             paths,
@@ -118,20 +138,33 @@ export async function getStaticProps({ params }) {
                 searchBy: 'slug',
                 searchKey: cmsSlug,
             }
-            let pageData = await cmsServices.SearchPage(searchPayload)
-
-            // CRITICAL FIX: Check if the page exists AND the slug matches exactly
-            if (!pageData || pageData.length === 0) {
+            let pageData
+            try {
+                pageData = await cmsServices.SearchPage(searchPayload)
+            } catch (error) {
+                console.error('Error fetching CMS page:', error)
                 return { notFound: true }
             }
 
-            // // Additional validation: Ensure exact slug match
-            const exactMatch = pageData[0].slug === cmsSlug ? true : false;
+            // CRITICAL FIX: Check if the page exists AND the slug matches exactly
+            if (!pageData || !Array.isArray(pageData) || pageData.length === 0) {
+                return { notFound: true }
+            }
+
+            // Additional validation: Ensure exact slug match
+            const exactMatch = pageData[0] && pageData[0].slug === cmsSlug
             if (!exactMatch) {
                 return { notFound: true }
             }
 
-            let siteSettings = await settingsServices.getSettings()
+            let siteSettings
+            try {
+                siteSettings = await settingsServices.getSettings()
+            } catch (error) {
+                console.error('Error fetching site settings:', error)
+                siteSettings = {}
+            }
+            
             return { 
                 props: { 
                     pageType: 'cms',
@@ -165,7 +198,19 @@ export async function getStaticProps({ params }) {
                 searchBy: 'slug',
                 searchKey: propertySlug,
             }
-            const propertyDetails = await propertiesServices.getAllProperties(payload)
+            
+            let propertyDetails
+            try {
+                propertyDetails = await propertiesServices.getAllProperties(payload)
+            } catch (error) {
+                console.error('Error fetching property details:', error)
+                return { notFound: true }
+            }
+            
+            if (!propertyDetails || !Array.isArray(propertyDetails)) {
+                console.error('Property details is not an array:', propertyDetails)
+                return { notFound: true }
+            }
             
             // console.log('🔍 DEBUG: Property search results:', propertyDetails?.length || 0, 'properties found')
             // if (propertyDetails && propertyDetails.length > 0) {
