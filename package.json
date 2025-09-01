@@ -3,7 +3,7 @@
     "version": "1.1.0",
     "private": true,
     "scripts": {
-    "dev": "cross-env NODE_ENV=development next dev -p $PORT",
+    "dev": "cross-env NODE_ENV=development next dev -H 0.0.0.0 -p $PORT",
     "build": "cross-env NODE_ENV=production next build",
     "start": "cross-env NODE_ENV=production next start -p 3113",
     "modify:firebase-dev": "cross-env NODE_ENV=development node scripts/set-dev.js",
