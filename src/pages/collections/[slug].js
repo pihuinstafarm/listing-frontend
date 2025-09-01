@@ -14,39 +14,79 @@ import FAQSection from 'containers/Faqs'
 import TitleDescription from 'components/TitleDescription'
 
 export async function getStaticPaths() {
-    let payload = {
-        pageNumber: 1,
-        totalPages: 0,
-        LastDocument: false,
-        moveTo: false,
-        orderBy: 'weight',
-        searchBy: '',
-        searchKey: '',
-        attributes: 'slug',
-    }
+    try {
+        let payload = {
+            pageNumber: 1,
+            totalPages: 0,
+            LastDocument: false,
+            moveTo: false,
+            orderBy: 'weight',
+            searchBy: '',
+            searchKey: '',
+            attributes: 'slug',
+        }
 
-    // Call an external API endpoint to get posts
-    let dataList = await collectionsSerivces.paginateCollections(payload)
-    const paths = dataList.map((post) => ({
-        params: { slug: post.slug },
-    }))
-    return { paths, fallback: false }
+        // Call an external API endpoint to get posts
+        let dataList = await collectionsSerivces.paginateCollections(payload)
+        
+        if (!dataList || !Array.isArray(dataList)) {
+            console.error('Collections data list is not an array:', dataList)
+            return { paths: [], fallback: 'blocking' }
+        }
+        
+        const paths = dataList
+            .filter((post) => post && post.slug && typeof post.slug === 'string')
+            .map((post) => ({
+                params: { slug: post.slug },
+            }))
+            
+        console.log('Collections paths generated:', paths.length)
+        return { paths, fallback: 'blocking' }
+    } catch (error) {
+        console.error('Error in collections getStaticPaths:', error)
+        return { paths: [], fallback: 'blocking' }
+    }
 }
 
 export async function getStaticProps({ params }) {
-    let payload = {
-        pageNumber: 1,
-        totalPages: 0,
-        LastDocument: false,
-        moveTo: false,
-        perPage: 1,
-        orderBy: 'weight',
-        searchBy: 'slug',
-        searchKey: params.slug,
+    try {
+        let payload = {
+            pageNumber: 1,
+            totalPages: 0,
+            LastDocument: false,
+            moveTo: false,
+            perPage: 1,
+            orderBy: 'weight',
+            searchBy: 'slug',
+            searchKey: params.slug,
+        }
+        
+        let propsDataList
+        try {
+            propsDataList = await collectionsSerivces.paginateCollections(payload)
+        } catch (error) {
+            console.error('Error fetching collection data:', error)
+            return { notFound: true }
+        }
+        
+        if (!propsDataList || !Array.isArray(propsDataList) || propsDataList.length === 0) {
+            console.error('Collection not found for slug:', params.slug)
+            return { notFound: true }
+        }
+        
+        let siteSettings
+        try {
+            siteSettings = await settingsServices.getSettings()
+        } catch (error) {
+            console.error('Error fetching site settings:', error)
+            siteSettings = {}
+        }
+        
+        return { props: { siteSettings, propsDataList }, revalidate: 10 }
+    } catch (error) {
+        console.error('Error in collections getStaticProps:', error)
+        return { notFound: true }
     }
-    let propsDataList = await collectionsSerivces.paginateCollections(payload)
-    let siteSettings = await settingsServices.getSettings()
-    return { props: { siteSettings, propsDataList }, revalidate: 10 }
 }
 
 export default function CollectionBySlug({ siteSettings, propsDataList }) {
