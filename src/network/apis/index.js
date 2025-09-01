@@ -21,7 +21,8 @@ export const axiosInstance = axios.create({
     baseURL: process.env.NEXT_PUBLIC_DEV_BASE_URL,
     headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'X-App-Type': 'listing'
     },
 })
 

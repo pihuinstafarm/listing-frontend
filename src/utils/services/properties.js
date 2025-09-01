@@ -8,6 +8,7 @@ function Properties() {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                 }
             })
 
@@ -31,6 +32,7 @@ function Properties() {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                     'X-Legacy-API': 'true'  // Add this header to ensure legacy mapping
                 }
             })
@@ -56,6 +58,7 @@ function Properties() {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                 }
             })
 
@@ -81,6 +84,7 @@ function Properties() {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                 }
             })
 
@@ -119,6 +123,7 @@ function Properties() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                 },
                 body: JSON.stringify(payload),
             })
@@ -143,6 +148,7 @@ function Properties() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                 },
                 body: JSON.stringify(payload),
             })
@@ -186,6 +192,7 @@ function Properties() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                 },
                 body: JSON.stringify(payload),
             })
@@ -230,6 +237,7 @@ function Properties() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                 },
                 body: JSON.stringify(payload),
             })
@@ -257,6 +265,7 @@ function Properties() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                 },
                 body: JSON.stringify(payload),
             })
@@ -283,6 +292,7 @@ function Properties() {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                     'X-Legacy-API': 'true'  // Add this header to ensure legacy mapping
                 }
             })
@@ -315,6 +325,7 @@ function Properties() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                     'Authorization': `Bearer ${token}`
                 },
                 body: JSON.stringify(payload),
@@ -354,6 +365,7 @@ function Properties() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                     'Authorization': `Bearer ${token}`
                 },
                 body: JSON.stringify(payload),
@@ -388,6 +400,7 @@ function Properties() {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                     'Authorization': `Bearer ${token}`
                 }
             })
@@ -413,6 +426,7 @@ function Properties() {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                     'Authorization': `Bearer ${token}`
                 }
             })
@@ -440,6 +454,7 @@ function Properties() {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
+                        'X-App-Type': 'listing',
                         'Authorization': `Bearer ${token}`
                     }
                 })
@@ -470,6 +485,7 @@ function Properties() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing',
                     'Authorization': `Bearer ${token}`
                 },
                 body: JSON.stringify(payload),

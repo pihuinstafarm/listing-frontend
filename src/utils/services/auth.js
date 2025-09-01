@@ -6,6 +6,7 @@ function Auth() {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
+            'X-App-Type': 'listing',
             },
             body: JSON.stringify(payload),
         })
@@ -18,6 +19,7 @@ function Auth() {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
+            'X-App-Type': 'listing',
             },
             body: JSON.stringify(payload),
         })
@@ -30,6 +32,7 @@ function Auth() {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
+            'X-App-Type': 'listing',
             },
             body: JSON.stringify(payload),
         })
@@ -42,6 +45,7 @@ function Auth() {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
+            'X-App-Type': 'listing',
             },
             body: JSON.stringify(payload),
         })
@@ -56,6 +60,7 @@ function Auth() {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
+            'X-App-Type': 'listing',
             'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify(payload),
@@ -75,6 +80,7 @@ function Auth() {
             method: 'GET',
             headers: {
             'Content-Type': 'application/json',
+            'X-App-Type': 'listing',
             'Authorization': `Bearer ${token}`
             }
         })
@@ -91,6 +97,7 @@ function Auth() {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
+            'X-App-Type': 'listing',
             'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify(payload),
@@ -105,6 +112,7 @@ function Auth() {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
+            'X-App-Type': 'listing',
             'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify(payload),
@@ -119,6 +127,7 @@ function Auth() {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
+            'X-App-Type': 'listing',
             'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify(payload),

@@ -18,6 +18,7 @@ function Collections() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'X-App-Type': 'listing'
             },
             body: JSON.stringify(payload),
         })
@@ -43,6 +44,7 @@ function Collections() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'X-App-Type': 'listing'
             },
             body: JSON.stringify(payload),
         })
@@ -57,6 +59,7 @@ function Collections() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'X-App-Type': 'listing'
             },
             body: JSON.stringify(payload),
         })

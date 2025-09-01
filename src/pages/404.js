@@ -21,6 +21,7 @@ export default function Custom404() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing'
                 },
                 body: JSON.stringify({ oldurl: currentPath }),
             })

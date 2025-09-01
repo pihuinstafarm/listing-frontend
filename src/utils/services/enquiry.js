@@ -7,7 +7,8 @@ function Enquiry() {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}`
+            'Authorization': `Bearer ${token}`,
+            'X-App-Type': 'listing'
             },
             body: JSON.stringify(payload),
         })
@@ -26,7 +27,8 @@ function Enquiry() {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${token}`
+                        'Authorization': `Bearer ${token}`,
+                        'X-App-Type': 'listing'
                     },
                     body: JSON.stringify(payload),
                 })
@@ -69,7 +71,8 @@ function Enquiry() {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${token}`
+                    'Authorization': `Bearer ${token}`,
+                    'X-App-Type': 'listing'
                 }
             })
             

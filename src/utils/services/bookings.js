@@ -5,7 +5,8 @@ function Booking() {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}`
+            'Authorization': `Bearer ${token}`,
+            'X-App-Type': 'listing'
             },
             body: JSON.stringify(payload),
         })
@@ -19,7 +20,8 @@ function Booking() {
          method: 'GET',
          headers: {
          'Content-Type': 'application/json',
-         'Authorization': `Bearer ${token}`
+         'Authorization': `Bearer ${token}`,
+         'X-App-Type': 'listing'
          }
      })
      

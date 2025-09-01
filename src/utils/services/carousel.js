@@ -6,6 +6,7 @@ function Carousel() {
             method: 'GET',
             headers: {
             'Content-Type': 'application/json',
+            'X-App-Type': 'listing'
             }
         })
         return await res.json()
@@ -15,6 +16,7 @@ function Carousel() {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
+            'X-App-Type': 'listing'
             },
             body: JSON.stringify(payload),
         })

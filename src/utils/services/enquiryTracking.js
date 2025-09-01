@@ -23,6 +23,7 @@ class EnquiryTrackingService {
     try {
       const headers = {
         'Content-Type': 'application/json',
+        'X-App-Type': 'listing',
       }
 
       // Add auth token if available (for logged-in users)
@@ -71,6 +72,7 @@ class EnquiryTrackingService {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'X-App-Type': 'listing',
           'Authorization': `Bearer ${token}`,
         },
         body: JSON.stringify(data),
@@ -113,6 +115,7 @@ class EnquiryTrackingService {
       const token = localStorage.getItem('token')
       const headers = {
         'Content-Type': 'application/json',
+        'X-App-Type': 'listing',
       }
 
       // Add authorization header if user is logged in
@@ -140,6 +143,7 @@ class EnquiryTrackingService {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
+          'X-App-Type': 'listing',
         },
         body: JSON.stringify({ totalResults }),
       })

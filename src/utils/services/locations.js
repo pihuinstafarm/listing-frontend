@@ -13,6 +13,7 @@ function Locations() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'X-App-Type': 'listing'
             },
             body: JSON.stringify(payload),
         })
@@ -26,6 +27,7 @@ function Locations() {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
+                'X-App-Type': 'listing'
             }
         })
         return await res.json()
@@ -36,6 +38,7 @@ function Locations() {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
+                'X-App-Type': 'listing'
             }
         })
         return await res.json()
@@ -65,6 +68,7 @@ function Locations() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'X-App-Type': 'listing'
             },
             body: JSON.stringify(payload),
         })
@@ -77,6 +81,7 @@ function Locations() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'X-App-Type': 'listing'
             },
             body: JSON.stringify(payload),
         })
@@ -89,6 +94,7 @@ function Locations() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'X-App-Type': 'listing'
             },
             body: JSON.stringify(payload),
         })
@@ -101,6 +107,7 @@ function Locations() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'X-App-Type': 'listing'
             },
             body: JSON.stringify(payload),
         })
@@ -112,6 +119,7 @@ function Locations() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'X-App-Type': 'listing'
             },
             body: JSON.stringify(payload),
         })

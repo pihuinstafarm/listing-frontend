@@ -7,6 +7,7 @@ function ContactRequest() {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
+            'X-App-Type': 'listing'
             },
             body: JSON.stringify(payload),
         })

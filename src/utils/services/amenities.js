@@ -11,6 +11,7 @@ function Amenities() {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing'
                 }
             });
             const amenitiesData = await amenitiesRes.json();
@@ -22,6 +23,7 @@ function Amenities() {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-App-Type': 'listing'
                 }
             });
             const activitiesData = await activitiesRes.json();

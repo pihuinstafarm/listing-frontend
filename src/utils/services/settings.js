@@ -6,6 +6,7 @@ function Settings() {
             method: 'GET',
             headers: {
             'Content-Type': 'application/json',
+            'X-App-Type': 'listing'
             }
         })
         return await res.json()
