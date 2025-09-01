@@ -188,10 +188,10 @@ export async function getStaticProps({ params }) {
             //         area_slug: exactPropertyMatch.address_details?.area_slug
             //     })
             // }
-            // if (!exactPropertyMatch) {
-            //     console.log('❌ DEBUG: No exact property match found for slug:', propertySlug)
-            //     return { notFound: true }
-            // }
+            if (!exactPropertyMatch) {
+                console.log('❌ DEBUG: No exact property match found for slug:', propertySlug)
+                return { notFound: true }
+            }
 
             // Additional validation: Check if the URL structure matches the property's actual location
             if (slug.length >= 3) {
