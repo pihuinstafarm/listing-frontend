@@ -64,15 +64,17 @@ export async function getStaticPaths() {
             }
         }
 
-        const propertyPaths = dataList.map((post) => ({
-            params: {
-                slug: [
-                    post.address_details?.city_name.toLowerCase() || 'telangana',
-                    post.address_details?.area_name.toLowerCase() || 'shamshabad',
-                    `${post.slug ? post.slug.toLowerCase() : 'default-property'}.html`,
-                ],
-            },
-        }))
+        const propertyPaths = dataList
+            .filter((post) => post.slug && post.address_details?.city_name && post.address_details?.area_name)
+            .map((post) => ({
+                params: {
+                    slug: [
+                        post.address_details.city_name.toLowerCase(),
+                        post.address_details.area_name.toLowerCase(),
+                        `${post.slug.toLowerCase()}.html`,
+                    ],
+                },
+            }))
 
         // 3. Get all paths for Individual CMS Pages
         // URL structure : /[cms-slug]
