@@ -24,78 +24,75 @@ export async function getStaticPaths() {
     try {
         // 1. Get all paths for Location Listing Pages
         // URL structure: /[state]/[city]/[area]
-        const areaData = await locationsSerivces.getAllArea()
-        const locationPaths = areaData.map((area) => ({
-            params: {
-                // Note: This generates URLs like /telangana/hyderabad/shamshabad
-                // If you want /telangana/hyderabad/farmhouses-in-shamshabad, you would modify area.slug here.
-                // For example: slug: [area.state_slug, area.city_name.toLowerCase(), `farmhouses-in-${area.slug}`]
-                slug: [
-                    area.state_slug || 'telangana',
-                    area.city_name || 'hyderabad',
-                    area.slug, // Assuming area.slug is already in the desired format
-                ],
-            },
-        }))
+        let locationPaths = []
+        try {
+            const areaData = await locationsSerivces.getAllArea()
+            if (areaData && Array.isArray(areaData)) {
+                locationPaths = areaData.map((area) => ({
+                    params: {
+                        slug: [
+                            area.state_slug || 'telangana',
+                            area.city_name || 'hyderabad',
+                            area.slug,
+                        ],
+                    },
+                }))
+            }
+        } catch (error) {
+            console.error('Error fetching location paths:', error)
+            // Continue with empty location paths
+        }
 
         // 2. Get all paths for Individual Property Pages
-        // URL structure: /[city]/[area]/[property-slug].html
-        const payload = {
-            pageNumber: 1,
-            totalPages: 0,
-            LastDocument: false,
-            moveTo: false,
-            perPage: 1000, // Fetch a large number for build time
-            orderBy: 'weight',
-            searchBy: '',
-            searchKey: '',
-            attributes: 'plans,slug,type,address_details',
-        }
-        const dataList = await propertiesServices.getAllProperties(payload)
-
-        if (!dataList || !Array.isArray(dataList)) {
-            console.error(
-                'Error: Property data list is empty or not an array in getStaticPaths.',
-            )
-            // Return only location paths if properties fetch fails
-            return {
-                paths: locationPaths,
-                fallback: 'blocking',
+        let propertyPaths = []
+        try {
+            const payload = {
+                pageNumber: 1,
+                totalPages: 0,
+                LastDocument: false,
+                moveTo: false,
+                perPage: 1000,
+                orderBy: 'weight',
+                searchBy: '',
+                searchKey: '',
+                attributes: 'plans,slug,type,address_details',
             }
-        }
+            const dataList = await propertiesServices.getAllProperties(payload)
 
-        const propertyPaths = dataList
-            .filter((post) => post.slug && post.address_details?.city_name && post.address_details?.area_name)
-            .map((post) => ({
-                params: {
-                    slug: [
-                        post.address_details.city_name.toLowerCase(),
-                        post.address_details.area_name.toLowerCase(),
-                        `${post.slug.toLowerCase()}.html`,
-                    ],
-                },
-            }))
+            if (dataList && Array.isArray(dataList)) {
+                propertyPaths = dataList
+                    .filter((post) => post.slug && post.address_details?.city_name && post.address_details?.area_name)
+                    .map((post) => ({
+                        params: {
+                            slug: [
+                                post.address_details.city_name.toLowerCase(),
+                                post.address_details.area_name.toLowerCase(),
+                                `${post.slug.toLowerCase()}.html`,
+                            ],
+                        },
+                    }))
+            }
+        } catch (error) {
+            console.error('Error fetching property paths:', error)
+            // Continue with empty property paths
+        }
 
         // 3. Get all paths for Individual CMS Pages
-        // URL structure : /[cms-slug]
-        let cmsPages = []
+        let cmsPaths = []
         try {
-            cmsPages = await cmsServices.getAllPages()
-            if (!Array.isArray(cmsPages)) {
-                console.error('CMS pages is not an array:', cmsPages)
-                cmsPages = []
+            const cmsPages = await cmsServices.getAllPages()
+            if (cmsPages && Array.isArray(cmsPages)) {
+                cmsPaths = cmsPages
+                    .filter((page) => page && page.slug && typeof page.slug === 'string')
+                    .map((page) => ({
+                        params: { slug: [page.slug] },
+                    }))
             }
         } catch (error) {
             console.error('Error fetching CMS pages:', error)
-            cmsPages = []
+            // Continue with empty CMS paths
         }
         
-        const cmsPaths = cmsPages
-            .filter((page) => page && page.slug && typeof page.slug === 'string')
-            .map((page) => ({
-                params: { slug: [page.slug] },
-            }))
-
         // 4. Combine both sets of paths
         const paths = [...locationPaths, ...propertyPaths, ...cmsPaths]
         
@@ -106,6 +103,18 @@ export async function getStaticPaths() {
             totalPaths: paths.length
         })
 
+        // Ensure we have at least some paths to prevent build failure
+        if (paths.length === 0) {
+            console.warn('No paths generated, using fallback paths')
+            return {
+                paths: [
+                    { params: { slug: ['home'] } },
+                    { params: { slug: ['about'] } }
+                ],
+                fallback: 'blocking',
+            }
+        }
+
         return {
             paths,
             fallback: 'blocking',
@@ -113,8 +122,12 @@ export async function getStaticPaths() {
     }
     catch (error) {
         console.error('Error in getStaticPaths:', error)
+        // Return fallback paths to prevent build failure
         return {
-            paths: [],
+            paths: [
+                { params: { slug: ['home'] } },
+                { params: { slug: ['about'] } }
+            ],
             fallback: 'blocking',
         }
     }
@@ -124,7 +137,6 @@ export async function getStaticProps({ params }) {
     const { slug } = params // slug is an array of URL parts
 
     try {
-
         //---- CONDITION 1: Get all paths for Individual CMS Pages (e.g. /[cms-slug]) ----
         if (slug.length === 1) {
             const [cmsSlug] = slug;
@@ -157,12 +169,12 @@ export async function getStaticProps({ params }) {
                 return { notFound: true }
             }
 
-            let siteSettings
+            let siteSettings = {}
             try {
                 siteSettings = await settingsServices.getSettings()
             } catch (error) {
                 console.error('Error fetching site settings:', error)
-                siteSettings = {}
+                // Continue with empty settings
             }
             
             return { 
@@ -179,14 +191,9 @@ export async function getStaticProps({ params }) {
             // The actual property slug is the last part of the URL, without '.html'
             const propertySlug = slug[slug.length - 1].replace('.html', '')
             
-            // console.log('🔍 DEBUG: Property page detected')
-            // console.log('🔍 DEBUG: Full URL slug array:', slug)
-            // console.log('🔍 DEBUG: Extracted propertySlug:', propertySlug)
-
-            // if (!propertySlug) {
-            //     console.log('❌ DEBUG: No propertySlug found, returning 404')
-            //     return { notFound: true }
-            // }
+            if (!propertySlug) {
+                return { notFound: true }
+            }
 
             const payload = {
                 pageNumber: 1,
@@ -211,30 +218,9 @@ export async function getStaticProps({ params }) {
                 console.error('Property details is not an array:', propertyDetails)
                 return { notFound: true }
             }
-            
-            // console.log('🔍 DEBUG: Property search results:', propertyDetails?.length || 0, 'properties found')
-            // if (propertyDetails && propertyDetails.length > 0) {
-            //     console.log('🔍 DEBUG: Found property slugs in database:', propertyDetails.map(p => p.slug))
-            // }
-
-            // if (!propertyDetails || propertyDetails.length === 0) {
-            //     console.log('❌ DEBUG: No properties found for slug:', propertySlug)
-            //     return { notFound: true }
-            // }
 
             // CRITICAL FIX: Ensure exact slug match
             const exactPropertyMatch = propertyDetails.find(property => property.slug === propertySlug)
-            // console.log('🔍 DEBUG: Looking for exact slug:', propertySlug)
-            // console.log('🔍 DEBUG: Exact property match found:', !!exactPropertyMatch)
-            // if (exactPropertyMatch) {
-            //     console.log('🔍 DEBUG: Property details:', {
-            //         slug: exactPropertyMatch.slug,
-            //         city_name: exactPropertyMatch.address_details?.city_name,
-            //         area_name: exactPropertyMatch.address_details?.area_name,
-            //         city_slug: exactPropertyMatch.address_details?.city_slug,
-            //         area_slug: exactPropertyMatch.address_details?.area_slug
-            //     })
-            // }
             if (!exactPropertyMatch) {
                 console.log('❌ DEBUG: No exact property match found for slug:', propertySlug)
                 return { notFound: true }
@@ -248,26 +234,22 @@ export async function getStaticProps({ params }) {
                 const propertyCity = exactPropertyMatch.address_details?.city_name?.toLowerCase()
                 const propertyArea = exactPropertyMatch.address_details?.area_name?.toLowerCase()
                 
-                // console.log('🔍 DEBUG: URL vs Property validation:')
-                // console.log('  URL city:', urlCitySlug)
-                // console.log('  Property city (lowercase):', propertyCity)
-                // console.log('  URL area:', urlAreaSlug)
-                // console.log('  Property area (lowercase):', propertyArea)
-                
                 // Validate that the URL structure matches the property's actual location
                 if (propertyCity && propertyCity !== urlCitySlug) {
-                    // console.log('❌ DEBUG: City mismatch! URL:', urlCitySlug, 'vs Property:', propertyCity)
                     return { notFound: true }
                 }
                 if (propertyArea && propertyArea !== urlAreaSlug) {
-                    // console.log('❌ DEBUG: Area mismatch! URL:', urlAreaSlug, 'vs Property:', propertyArea)
                     return { notFound: true }
                 }
-                
-                // console.log('✅ DEBUG: URL validation passed!')
             }
 
-            const siteSettings = await settingsServices.getSettings()
+            let siteSettings = {}
+            try {
+                siteSettings = await settingsServices.getSettings()
+            } catch (error) {
+                console.error('Error fetching site settings:', error)
+                // Continue with empty settings
+            }
 
             return {
                 props: {
@@ -283,20 +265,27 @@ export async function getStaticProps({ params }) {
             const [stateSlug, citySlug, areaSlug] = slug
 
             // Fetch area details to confirm it's a valid location page
-            const areaPayload = {
-                pageNumber: 1,
-                perPage: 1,
-                searchBy: 'slug',
-                searchKey: areaSlug,
+            let areaDetails = []
+            try {
+                const areaPayload = {
+                    pageNumber: 1,
+                    perPage: 1,
+                    searchBy: 'slug',
+                    searchKey: areaSlug,
+                }
+                areaDetails = await locationsSerivces.SearchAreas(areaPayload)
+            } catch (error) {
+                console.error('Error fetching area details:', error)
+                return { notFound: true }
             }
-            const areaDetails = await locationsSerivces.SearchAreas(areaPayload)
             
             // If no area is found for this slug, it's a 404
             if (!areaDetails || areaDetails.length === 0) {
                 return { notFound: true }
             }
+            
             // CRITICAL FIX: Ensure exact slug match and validate state/city structure
-            const exactAreaMatch = (areaDetails[0].slug===areaSlug) ? true : false;
+            const exactAreaMatch = (areaDetails[0].slug === areaSlug) ? true : false;
             if (!exactAreaMatch) {
                 return { notFound: true }
             }
@@ -310,17 +299,30 @@ export async function getStaticProps({ params }) {
             }
 
             // Fetch all properties for this area
-            const searchPayload = {
-                pageNumber: 1,
-                perPage: 500, // Fetch a good number of properties for the list page
-                orderBy: 'weight',
-                searchBy: 'address_details.area_slug',
-                searchKey: areaSlug,
-                attributes:
-                    'plans,name,property_code_name,slug,max_guest_count,address_details,price_detail,caretaker,featured_image,type,bedroom_count,rooms,check_in_time,check_out_time,max_guest_count,bathroom_count,amenities,faqs,meta_url,meta_description,manager',
+            let dataList = []
+            try {
+                const searchPayload = {
+                    pageNumber: 1,
+                    perPage: 500, // Fetch a good number of properties for the list page
+                    orderBy: 'weight',
+                    searchBy: 'address_details.area_slug',
+                    searchKey: areaSlug,
+                    attributes:
+                        'plans,name,property_code_name,slug,max_guest_count,address_details,price_detail,caretaker,featured_image,type,bedroom_count,rooms,check_in_time,check_out_time,max_guest_count,bathroom_count,amenities,faqs,meta_url,meta_description,manager',
+                }
+                dataList = await propertiesServices.getAllProperties(searchPayload)
+            } catch (error) {
+                console.error('Error fetching properties for area:', error)
+                // Continue with empty data list
             }
-            const dataList = await propertiesServices.getAllProperties(searchPayload)
-            const siteSettings = await settingsServices.getSettings()
+            
+            let siteSettings = {}
+            try {
+                siteSettings = await settingsServices.getSettings()
+            } catch (error) {
+                console.error('Error fetching site settings:', error)
+                // Continue with empty settings
+            }
 
             return {
                 props: {

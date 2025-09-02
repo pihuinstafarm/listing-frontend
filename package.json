@@ -5,6 +5,7 @@
     "scripts": {
     "dev": "cross-env NODE_ENV=development next dev -H 0.0.0.0 -p $PORT",
     "build": "cross-env NODE_ENV=production next build",
+    "build:debug": "node scripts/build-debug.js",
     "start": "cross-env NODE_ENV=production next start -p 3113",
     "modify:firebase-dev": "cross-env NODE_ENV=development node scripts/set-dev.js",
     "modify:firebase-prod": "cross-env NODE_ENV=production node scripts/set-prod.js",

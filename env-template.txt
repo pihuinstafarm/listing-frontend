@@ -1,0 +1,10 @@
+# Copy these environment variables to your Vercel dashboard
+
+# API Base URL
+NEXT_PUBLIC_DEV_BASE_URL=https://us-central1-jarvis-a6aba.cloudfunctions.net/api
+
+# Build Configuration
+NODE_ENV=production
+
+# Next.js Configuration
+NEXT_TELEMETRY_DISABLED=1 

@@ -1,4 +1,16 @@
 module.exports = {
+  // Increase build timeout for large applications
+  experimental: {
+    workerThreads: false,
+    cpus: 1
+  },
+  
+  // Optimize build process
+  swcMinify: true,
+  
+  // Increase static generation timeout
+  staticPageGenerationTimeout: 120,
+  
   async headers() {
     return [
       {
